@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jacques/repos/math4171/src/arcmath/CoreMath.cpp
+CoreMath.hpp
+/home/jacques/repos/math4171/src/arcmath/CoreMath.hpp
+
+/home/jacques/repos/math4171/src/arcmath/CoreMath.hpp
+algorithm
+-
+cmath
+-
+cfloat
+-
+cstdint
+-
+

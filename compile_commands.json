@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/jacques/repos/math4171/build/arcmath",
+  "command": "/usr/bin/clang++   -I/usr/include/python2.7  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/CoreMath.cpp.o -c /home/jacques/repos/math4171/src/arcmath/CoreMath.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcmath/CoreMath.cpp"
+},
+{
+  "directory": "/home/jacques/repos/math4171/build/assignment1-src",
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath -I/usr/include/python2.7    -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/assignment1.dir/Main.cpp.o -c /home/jacques/repos/math4171/src/assignment1-src/Main.cpp",
+  "file": "/home/jacques/repos/math4171/src/assignment1-src/Main.cpp"
+}
+]
