@@ -3,6 +3,9 @@
 /home/jacques/repos/math4171/build/arcmath/CMakeFiles/rebuild_cache.dir
 /home/jacques/repos/math4171/build/arcmath/CMakeFiles/arcmath.dir
 /home/jacques/repos/math4171/build/arcmath/CMakeFiles/edit_cache.dir
+/home/jacques/repos/math4171/build/arcpython/CMakeFiles/rebuild_cache.dir
+/home/jacques/repos/math4171/build/arcpython/CMakeFiles/arcpython.dir
+/home/jacques/repos/math4171/build/arcpython/CMakeFiles/edit_cache.dir
 /home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/rebuild_cache.dir
 /home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/assignment1.dir
 /home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/edit_cache.dir

@@ -10,7 +10,8 @@
 
 //#include "../../include/matplotlibcpp.h"
 #include "PythonContext.hpp"
-#include "NelderMeadMinimize.hpp"
+#include "PythonFunction.hpp"
+//#include "NelderMeadMinimize.hpp"
 
 //#ifdef _WIN32
 //#elif __APPLE__
@@ -24,9 +25,14 @@ using std::vector;
 using std::string;
 
 using namespace arc;
-;
 
 int main(int argc, char* argv[]) {
     PythonContext pythCtx;
     pythCtx.initialize();
+    pythCtx.appendToPath(
+        "/home/jacques/repos/math4171/src/arcmath/pythonscripts/");
+    auto foo = pythCtx.loadModule( "foo" );
+    auto bar = pythCtx.loadFunction( foo, "bar" );
+    auto args = pythCtx.createTupple( 3 );
+    bar->call( args );
 }

@@ -7,8 +7,9 @@ set( CMAKE_MODULE_PATH ${Math4171_SOURCE_DIR}/../cmake/modules )
 set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 
 # Run `find_package` modules here for dependencies
-find_package(PythonLibs 2.7 REQUIRED )
+find_package(PythonLibs 3.6.2 REQUIRED )
 #target_include_directories( Math4171 PRIVATE ${PYTHON_INCLUDE_DIRS} )
 
 add_subdirectory( ./arcmath )
+add_subdirectory( ./arcpython )
 add_subdirectory( ./assignment1-src )

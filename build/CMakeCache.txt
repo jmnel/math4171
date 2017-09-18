@@ -159,16 +159,19 @@ Math4171_BINARY_DIR:STATIC=/home/jacques/repos/math4171/build
 Math4171_SOURCE_DIR:STATIC=/home/jacques/repos/math4171/src
 
 //Path to a file.
-PYTHON_INCLUDE_DIR:PATH=/usr/include/python2.7
+PYTHON_INCLUDE_DIR:PATH=/usr/include/python3.6m
 
 //Path to a library.
-PYTHON_LIBRARY:FILEPATH=/usr/lib/libpython2.7.so
+PYTHON_LIBRARY:FILEPATH=/usr/lib/libpython3.6m.so
 
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Dependencies for the target
-arcmath_LIB_DEPENDS:STATIC=general;/usr/lib/libpython2.7.so;
+arcmath_LIB_DEPENDS:STATIC=general;/usr/lib/libpython3.6m.so;
+
+//Dependencies for the target
+arcpython_LIB_DEPENDS:STATIC=general;/usr/lib/libpython3.6m.so;general;arcmath;
 
 
 ########################
@@ -255,7 +258,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -297,7 +300,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/libpython2.7.so][/usr/include/python2.7][v2.7.13(2.7)]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/libpython3.6m.so][/usr/include/python3.6m][v3.6.2(3.6.2)]
 //ADVANCED property for variable: PYTHON_INCLUDE_DIR
 PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_LIBRARY

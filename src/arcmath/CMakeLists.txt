@@ -5,8 +5,6 @@ set( CMAKE_CXX_FLAGS "-Wall -Wextra" )
 
 set( SRC_FILES
     CoreMath.cpp
-    IPythonContext.cpp
-    PythonContext.cpp
     )
 
 add_library( arcmath STATIC ${SRC_FILES} )

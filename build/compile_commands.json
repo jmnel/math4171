@@ -1,22 +1,32 @@
 [
 {
   "directory": "/home/jacques/repos/math4171/build/arcmath",
-  "command": "/usr/bin/clang++   -I/usr/include/python2.7  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/CoreMath.cpp.o -c /home/jacques/repos/math4171/src/arcmath/CoreMath.cpp",
+  "command": "/usr/bin/clang++   -I/usr/include/python3.6m  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/CoreMath.cpp.o -c /home/jacques/repos/math4171/src/arcmath/CoreMath.cpp",
   "file": "/home/jacques/repos/math4171/src/arcmath/CoreMath.cpp"
 },
 {
-  "directory": "/home/jacques/repos/math4171/build/arcmath",
-  "command": "/usr/bin/clang++   -I/usr/include/python2.7  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/IPythonContext.cpp.o -c /home/jacques/repos/math4171/src/arcmath/IPythonContext.cpp",
-  "file": "/home/jacques/repos/math4171/src/arcmath/IPythonContext.cpp"
+  "directory": "/home/jacques/repos/math4171/build/arcpython",
+  "command": "/usr/bin/clang++   -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonContext.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcpython/PythonContext.cpp"
 },
 {
-  "directory": "/home/jacques/repos/math4171/build/arcmath",
-  "command": "/usr/bin/clang++   -I/usr/include/python2.7  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/PythonContext.cpp.o -c /home/jacques/repos/math4171/src/arcmath/PythonContext.cpp",
-  "file": "/home/jacques/repos/math4171/src/arcmath/PythonContext.cpp"
+  "directory": "/home/jacques/repos/math4171/build/arcpython",
+  "command": "/usr/bin/clang++   -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonFunction.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp"
+},
+{
+  "directory": "/home/jacques/repos/math4171/build/arcpython",
+  "command": "/usr/bin/clang++   -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonModule.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonModule.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcpython/PythonModule.cpp"
+},
+{
+  "directory": "/home/jacques/repos/math4171/build/arcpython",
+  "command": "/usr/bin/clang++   -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonTupple.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp"
 },
 {
   "directory": "/home/jacques/repos/math4171/build/assignment1-src",
-  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath -I/usr/include/python2.7    -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/assignment1.dir/Main.cpp.o -c /home/jacques/repos/math4171/src/assignment1-src/Main.cpp",
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath -I/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath    -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/assignment1.dir/Main.cpp.o -c /home/jacques/repos/math4171/src/assignment1-src/Main.cpp",
   "file": "/home/jacques/repos/math4171/src/assignment1-src/Main.cpp"
 }
 ]

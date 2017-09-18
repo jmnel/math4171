@@ -11,12 +11,15 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath"
-  "/usr/include/python2.7"
+  "/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython"
+  "/usr/include/python3.6m"
+  "/home/jacques/repos/math4171/src/arcpython/arcmath"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/jacques/repos/math4171/build/arcmath/CMakeFiles/arcmath.dir/DependInfo.cmake"
+  "/home/jacques/repos/math4171/build/arcpython/CMakeFiles/arcpython.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/python2.7 
+CXX_INCLUDES = -I/usr/include/python3.6m 
 
