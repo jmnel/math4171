@@ -9,28 +9,24 @@
 #include <Vec.hpp>
 
 //#include "../../include/matplotlibcpp.h"
+#include "PythonContext.hpp"
+#include "NelderMeadMinimize.hpp"
 
-#ifdef _WIN32
-#elif __APPLE__
-#elif __linux__
-#include <unistd.h>
-#endif
+//#ifdef _WIN32
+//#elif __APPLE__
+//#elif __linux__
+//#include <unistd.h>
+//#endif
 
 using std::cout;
 using std::endl;
 using std::vector;
 using std::string;
 
+using namespace arc;
+;
+
 int main(int argc, char* argv[]) {
-    string cmd1 = "ls -l";
-
-    int pipeFd[2], rs;
-
-    rs = pipe(pipeFd);
-    if (rs < 0) {
-        perror("pipe");
-        exit(EXIT_FAILURE);
-    }
-
-    cout << "hi" << endl;
+    PythonContext pythCtx;
+    pythCtx.initialize();
 }

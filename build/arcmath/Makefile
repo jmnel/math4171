@@ -152,6 +152,60 @@ CoreMath.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.s
 .PHONY : CoreMath.cpp.s
 
+IPythonContext.o: IPythonContext.cpp.o
+
+.PHONY : IPythonContext.o
+
+# target to build an object file
+IPythonContext.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/IPythonContext.cpp.o
+.PHONY : IPythonContext.cpp.o
+
+IPythonContext.i: IPythonContext.cpp.i
+
+.PHONY : IPythonContext.i
+
+# target to preprocess a source file
+IPythonContext.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/IPythonContext.cpp.i
+.PHONY : IPythonContext.cpp.i
+
+IPythonContext.s: IPythonContext.cpp.s
+
+.PHONY : IPythonContext.s
+
+# target to generate assembly for a file
+IPythonContext.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/IPythonContext.cpp.s
+.PHONY : IPythonContext.cpp.s
+
+PythonContext.o: PythonContext.cpp.o
+
+.PHONY : PythonContext.o
+
+# target to build an object file
+PythonContext.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/PythonContext.cpp.o
+.PHONY : PythonContext.cpp.o
+
+PythonContext.i: PythonContext.cpp.i
+
+.PHONY : PythonContext.i
+
+# target to preprocess a source file
+PythonContext.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/PythonContext.cpp.i
+.PHONY : PythonContext.cpp.i
+
+PythonContext.s: PythonContext.cpp.s
+
+.PHONY : PythonContext.s
+
+# target to generate assembly for a file
+PythonContext.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/PythonContext.cpp.s
+.PHONY : PythonContext.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +218,12 @@ help:
 	@echo "... CoreMath.o"
 	@echo "... CoreMath.i"
 	@echo "... CoreMath.s"
+	@echo "... IPythonContext.o"
+	@echo "... IPythonContext.i"
+	@echo "... IPythonContext.s"
+	@echo "... PythonContext.o"
+	@echo "... PythonContext.i"
+	@echo "... PythonContext.s"
 .PHONY : help
 
 

@@ -1,4 +1,9 @@
+#include <iostream>
+
 #include "PythonContext.hpp"
+
+using std::cout;
+using std::endl;
 
 namespace arc {
 
@@ -8,4 +13,5 @@ namespace arc {
     // -- Destructor --
     PythonContext::~PythonContext() {}
 
-    void PythonContext::initialize() { Py }
+    void PythonContext::initialize() { cout << "initializing python" << endl; }
+}

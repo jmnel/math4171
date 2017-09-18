@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/arcmath.dir/CoreMath.cpp.o"
+  "CMakeFiles/arcmath.dir/IPythonContext.cpp.o"
+  "CMakeFiles/arcmath.dir/PythonContext.cpp.o"
   "libarcmath.pdb"
   "libarcmath.a"
 )
