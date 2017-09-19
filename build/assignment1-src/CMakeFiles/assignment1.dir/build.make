@@ -93,8 +93,10 @@ assignment1_EXTERNAL_OBJECTS =
 /home/jacques/repos/math4171/bin/Debug/assignment1: /usr/lib/libpython3.6m.so
 /home/jacques/repos/math4171/bin/Debug/assignment1: arcmath/libarcmath.a
 /home/jacques/repos/math4171/bin/Debug/assignment1: arcpython/libarcpython.a
-/home/jacques/repos/math4171/bin/Debug/assignment1: arcmath/libarcmath.a
+/home/jacques/repos/math4171/bin/Debug/assignment1: arcplot/libarcplot.a
+/home/jacques/repos/math4171/bin/Debug/assignment1: arcpython/libarcpython.a
 /home/jacques/repos/math4171/bin/Debug/assignment1: /usr/lib/libpython3.6m.so
+/home/jacques/repos/math4171/bin/Debug/assignment1: arcmath/libarcmath.a
 /home/jacques/repos/math4171/bin/Debug/assignment1: assignment1-src/CMakeFiles/assignment1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jacques/repos/math4171/bin/Debug/assignment1"
 	cd /home/jacques/repos/math4171/build/assignment1-src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignment1.dir/link.txt --verbose=$(VERBOSE)

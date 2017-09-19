@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarcplot.a  CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o
+/usr/bin/ranlib libarcplot.a

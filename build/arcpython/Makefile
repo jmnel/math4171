@@ -152,6 +152,33 @@ PythonContext.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.s
 .PHONY : PythonContext.cpp.s
 
+PythonFloat.o: PythonFloat.cpp.o
+
+.PHONY : PythonFloat.o
+
+# target to build an object file
+PythonFloat.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o
+.PHONY : PythonFloat.cpp.o
+
+PythonFloat.i: PythonFloat.cpp.i
+
+.PHONY : PythonFloat.i
+
+# target to preprocess a source file
+PythonFloat.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.i
+.PHONY : PythonFloat.cpp.i
+
+PythonFloat.s: PythonFloat.cpp.s
+
+.PHONY : PythonFloat.s
+
+# target to generate assembly for a file
+PythonFloat.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.s
+.PHONY : PythonFloat.cpp.s
+
 PythonFunction.o: PythonFunction.cpp.o
 
 .PHONY : PythonFunction.o
@@ -179,6 +206,33 @@ PythonFunction.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.s
 .PHONY : PythonFunction.cpp.s
 
+PythonList.o: PythonList.cpp.o
+
+.PHONY : PythonList.o
+
+# target to build an object file
+PythonList.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o
+.PHONY : PythonList.cpp.o
+
+PythonList.i: PythonList.cpp.i
+
+.PHONY : PythonList.i
+
+# target to preprocess a source file
+PythonList.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.i
+.PHONY : PythonList.cpp.i
+
+PythonList.s: PythonList.cpp.s
+
+.PHONY : PythonList.s
+
+# target to generate assembly for a file
+PythonList.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.s
+.PHONY : PythonList.cpp.s
+
 PythonModule.o: PythonModule.cpp.o
 
 .PHONY : PythonModule.o
@@ -205,6 +259,33 @@ PythonModule.s: PythonModule.cpp.s
 PythonModule.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.s
 .PHONY : PythonModule.cpp.s
+
+PythonObject.o: PythonObject.cpp.o
+
+.PHONY : PythonObject.o
+
+# target to build an object file
+PythonObject.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o
+.PHONY : PythonObject.cpp.o
+
+PythonObject.i: PythonObject.cpp.i
+
+.PHONY : PythonObject.i
+
+# target to preprocess a source file
+PythonObject.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.i
+.PHONY : PythonObject.cpp.i
+
+PythonObject.s: PythonObject.cpp.s
+
+.PHONY : PythonObject.s
+
+# target to generate assembly for a file
+PythonObject.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.s
+.PHONY : PythonObject.cpp.s
 
 PythonTupple.o: PythonTupple.cpp.o
 
@@ -245,12 +326,21 @@ help:
 	@echo "... PythonContext.o"
 	@echo "... PythonContext.i"
 	@echo "... PythonContext.s"
+	@echo "... PythonFloat.o"
+	@echo "... PythonFloat.i"
+	@echo "... PythonFloat.s"
 	@echo "... PythonFunction.o"
 	@echo "... PythonFunction.i"
 	@echo "... PythonFunction.s"
+	@echo "... PythonList.o"
+	@echo "... PythonList.i"
+	@echo "... PythonList.s"
 	@echo "... PythonModule.o"
 	@echo "... PythonModule.i"
 	@echo "... PythonModule.s"
+	@echo "... PythonObject.o"
+	@echo "... PythonObject.i"
+	@echo "... PythonObject.s"
 	@echo "... PythonTupple.o"
 	@echo "... PythonTupple.i"
 	@echo "... PythonTupple.s"

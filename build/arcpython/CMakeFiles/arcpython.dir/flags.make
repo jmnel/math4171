@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath 
+CXX_INCLUDES = -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath -I/home/jacques/repos/math4171/src/arcmath/. 
 

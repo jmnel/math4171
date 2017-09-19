@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/arcmath.dir/CoreMath.cpp.o"
+  "CMakeFiles/arcmath.dir/MinNelderMead.cpp.o"
   "libarcmath.pdb"
   "libarcmath.a"
 )

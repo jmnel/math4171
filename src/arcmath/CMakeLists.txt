@@ -1,23 +1,20 @@
 set( CMAKE_CXX_STANDARD 14 )
 set( CMAKE_CXX_FLAGS "-Wall -Wextra" )
 
-#find_package(PythonLibs 2.7 REQUIRED )
-
 set( SRC_FILES
     CoreMath.cpp
+    MinNelderMead.cpp
     )
 
 add_library( arcmath STATIC ${SRC_FILES} )
 
 # Set library dependency include directories here
-target_include_directories( arcmath PUBLIC ${PYTHON_INCLUDE_DIRS} )
-
+target_include_directories( arcmath PUBLIC . )
 
 set( DEBUG_FLAGS "-Wall" "-Wextra" "-O3" )
 target_compile_options( arcmath PUBLIC ${DEBUG_FLAGS} )
 
 # Link library dependency libraries here
-target_link_libraries( arcmath ${PYTHON_LIBRARIES} )
 
 add_custom_command(
     TARGET arcmath POST_BUILD

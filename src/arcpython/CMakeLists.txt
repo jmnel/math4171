@@ -1,21 +1,26 @@
+# ---------------------------------------------------
+# -- CMakeLists.txt for `arcpython` static library --
+# ---------------------------------------------------
 set( CMAKE_CXX_STANDARD 14 )
 set( CMAKE_CXX_FLAGS "-Wall -Wextra" )
 
-#find_package(PythonLibs 2.7 REQUIRED )
-
 set( SRC_FILES
     PythonContext.cpp
+    PythonFloat.cpp
     PythonFunction.cpp
+    PythonList.cpp
     PythonModule.cpp
+    PythonObject.cpp
     PythonTupple.cpp
     )
 
 add_library( arcpython STATIC ${SRC_FILES} )
+target_include_directories( arcpython PUBLIC . )
+target_include_directories( arcpython PUBLIC ${PYTHON_INCLUDE_DIRS} )
 
 # Set library dependency include directories here
-target_include_directories( arcpython PUBLIC ${PYTHON_INCLUDE_DIRS} )
-target_include_directories( arcpython PUBLIC arcmath )
-
+include_directories( ${PYTHON_INCLUDE_DIRS} )
+include_directories( arcmath )
 
 set( DEBUG_FLAGS "-Wall" "-Wextra" "-O3" )
 target_compile_options( arcpython PUBLIC ${DEBUG_FLAGS} )
@@ -23,9 +28,3 @@ target_compile_options( arcpython PUBLIC ${DEBUG_FLAGS} )
 # Link library dependency libraries here
 target_link_libraries( arcpython ${PYTHON_LIBRARIES} )
 target_link_libraries( arcpython arcmath )
-
-#add_custom_command(
-    #TARGET arcmath POST_BUILD
-    #COMMAND ${CMAKE_COMMAND} -E copy
-    #${CMAKE_SOURCE_DIR}/../build/compile_commands.json
-    #${CMAKE_SOURCE_DIR}/../compile_commands.json )

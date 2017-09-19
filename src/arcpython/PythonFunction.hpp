@@ -9,6 +9,7 @@
 #include "PythonObject.hpp"
 
 using std::cout;
+using std::dynamic_pointer_cast;
 using std::endl;
 using std::shared_ptr;
 using std::string;
@@ -19,7 +20,7 @@ namespace arc {
     class PythonModule;
     class PythonTupple;
 
-    class PythonFunction : PyObject {
+    class PythonFunction : PythonObject {
     public:
         PythonFunction();
         virtual ~PythonFunction();

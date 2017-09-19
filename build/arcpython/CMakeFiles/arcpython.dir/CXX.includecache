@@ -9,8 +9,12 @@
 /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp
 iostream
 -
+PythonFloat.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
 PythonFunction.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonFunction.hpp
+PythonList.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 PythonModule.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
 PythonTupple.hpp
@@ -28,7 +32,23 @@ vector
 Python.h
 -
 
+/home/jacques/repos/math4171/src/arcpython/PythonFloat.cpp
+PythonFloat.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
+cassert
+-
+memory
+-
+Python.h
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
+
 /home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp
+PythonFloat.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
 PythonModule.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
 PythonTupple.hpp
@@ -44,6 +64,22 @@ iostream
 memory
 -
 string
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonList.cpp
+PythonList.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
+Python.h
+-
+iostream
+-
+memory
+-
+vector
 -
 PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
@@ -64,7 +100,13 @@ Python.h
 PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
+/home/jacques/repos/math4171/src/arcpython/PythonObject.cpp
+PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
+Python.h
+-
 
 /home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp
 PythonTupple.hpp
@@ -77,6 +119,10 @@ iostream
 -
 memory
 -
+vector
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
 /usr/include/python3.6m/Python.h
 patchlevel.h

@@ -12,7 +12,9 @@ using std::vector;
 
 namespace arc {
 
+    class PythonFloat;
     class PythonFunction;
+    class PythonList;
     class PythonModule;
     class PythonTupple;
 
@@ -22,12 +24,17 @@ namespace arc {
         ~PythonContext();
         void initialize();
 
+        void destroy();
+
         void appendToPath(string const &path);
 
         shared_ptr<PythonFunction> loadFunction(shared_ptr<PythonModule> module,
                                                 string const &name);
 
         shared_ptr<PythonModule> loadModule(string const &moduleName);
+
+        shared_ptr<PythonFloat> createFloat(double v);
+        shared_ptr<PythonList> createList(size_t size);
 
         shared_ptr<PythonTupple> createTupple(size_t size);
 

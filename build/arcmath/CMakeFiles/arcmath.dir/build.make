@@ -81,17 +81,43 @@ arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o.provides: arcmath/CMakeFiles/arcma
 arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o.provides.build: arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o
 
 
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o: arcmath/CMakeFiles/arcmath.dir/flags.make
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o: /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o"
+	cd /home/jacques/repos/math4171/build/arcmath && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcmath.dir/MinNelderMead.cpp.o -c /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp
+
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arcmath.dir/MinNelderMead.cpp.i"
+	cd /home/jacques/repos/math4171/build/arcmath && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp > CMakeFiles/arcmath.dir/MinNelderMead.cpp.i
+
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arcmath.dir/MinNelderMead.cpp.s"
+	cd /home/jacques/repos/math4171/build/arcmath && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp -o CMakeFiles/arcmath.dir/MinNelderMead.cpp.s
+
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.requires:
+
+.PHONY : arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.requires
+
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.provides: arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.requires
+	$(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.provides.build
+.PHONY : arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.provides
+
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.provides.build: arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o
+
+
 # Object files for target arcmath
 arcmath_OBJECTS = \
-"CMakeFiles/arcmath.dir/CoreMath.cpp.o"
+"CMakeFiles/arcmath.dir/CoreMath.cpp.o" \
+"CMakeFiles/arcmath.dir/MinNelderMead.cpp.o"
 
 # External object files for target arcmath
 arcmath_EXTERNAL_OBJECTS =
 
 arcmath/libarcmath.a: arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o
+arcmath/libarcmath.a: arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o
 arcmath/libarcmath.a: arcmath/CMakeFiles/arcmath.dir/build.make
 arcmath/libarcmath.a: arcmath/CMakeFiles/arcmath.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libarcmath.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libarcmath.a"
 	cd /home/jacques/repos/math4171/build/arcmath && $(CMAKE_COMMAND) -P CMakeFiles/arcmath.dir/cmake_clean_target.cmake
 	cd /home/jacques/repos/math4171/build/arcmath && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arcmath.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/jacques/repos/math4171/build/arcmath && /usr/bin/cmake -E copy /home/jacques/repos/math4171/src/../build/compile_commands.json /home/jacques/repos/math4171/src/../compile_commands.json
@@ -102,6 +128,7 @@ arcmath/CMakeFiles/arcmath.dir/build: arcmath/libarcmath.a
 .PHONY : arcmath/CMakeFiles/arcmath.dir/build
 
 arcmath/CMakeFiles/arcmath.dir/requires: arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o.requires
+arcmath/CMakeFiles/arcmath.dir/requires: arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o.requires
 
 .PHONY : arcmath/CMakeFiles/arcmath.dir/requires
 

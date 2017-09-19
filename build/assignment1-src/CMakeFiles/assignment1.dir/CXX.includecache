@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath/CoreMath.hpp
+/home/jacques/repos/math4171/src/arcmath/./CoreMath.hpp
 algorithm
 -
 cmath
@@ -16,23 +16,31 @@ cfloat
 cstdint
 -
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath/Vec.hpp
+/home/jacques/repos/math4171/src/arcmath/./Vec.hpp
 cassert
 -
 iostream
 -
 CoreMath.hpp
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath/CoreMath.hpp
+/home/jacques/repos/math4171/src/arcmath/./CoreMath.hpp
 Vec.inl
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath/Vec.inl
+/home/jacques/repos/math4171/src/arcmath/./Vec.inl
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcmath/Vec.inl
+/home/jacques/repos/math4171/src/arcmath/./Vec.inl
 string
 -
 sstream
 -
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython/PythonContext.hpp
+/home/jacques/repos/math4171/src/arcplot/./SurfPlot3d.hpp
+iostream
+-
+functional
+-
+Vec.hpp
+-
+
+/home/jacques/repos/math4171/src/arcpython/./PythonContext.hpp
 memory
 -
 string
@@ -42,7 +50,17 @@ vector
 Python.h
 -
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython/PythonFunction.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonFloat.hpp
+cassert
+-
+memory
+-
+Python.h
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
+
+/home/jacques/repos/math4171/src/arcpython/./PythonFunction.hpp
 Python.h
 -
 iostream
@@ -52,14 +70,42 @@ memory
 string
 -
 PythonObject.hpp
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython/PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
 
-/home/jacques/repos/math4171/src/assignment1-src/../../src/arcpython/PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonList.hpp
+Python.h
+-
+iostream
+-
+memory
+-
+vector
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
+
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
+Python.h
+-
+
+/home/jacques/repos/math4171/src/arcpython/./PythonTupple.hpp
+Python.h
+-
+iostream
+-
+memory
+-
+vector
+-
+PythonObject.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
 
 /home/jacques/repos/math4171/src/assignment1-src/Main.cpp
 cstdlib
 -
 iostream
+-
+memory
 -
 string
 -
@@ -69,8 +115,18 @@ Vec.hpp
 -
 PythonContext.hpp
 /home/jacques/repos/math4171/src/assignment1-src/PythonContext.hpp
+PythonFloat.hpp
+/home/jacques/repos/math4171/src/assignment1-src/PythonFloat.hpp
 PythonFunction.hpp
 /home/jacques/repos/math4171/src/assignment1-src/PythonFunction.hpp
+PythonList.hpp
+/home/jacques/repos/math4171/src/assignment1-src/PythonList.hpp
+PythonObject.hpp
+/home/jacques/repos/math4171/src/assignment1-src/PythonObject.hpp
+PythonTupple.hpp
+/home/jacques/repos/math4171/src/assignment1-src/PythonTupple.hpp
+SurfPlot3d.hpp
+/home/jacques/repos/math4171/src/assignment1-src/SurfPlot3d.hpp
 
 /usr/include/python3.6m/Python.h
 patchlevel.h

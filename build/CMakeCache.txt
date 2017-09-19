@@ -167,8 +167,11 @@ PYTHON_LIBRARY:FILEPATH=/usr/lib/libpython3.6m.so
 //Path to a library.
 PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
+//Dependencies for target
+arcmath_LIB_DEPENDS:STATIC=
+
 //Dependencies for the target
-arcmath_LIB_DEPENDS:STATIC=general;/usr/lib/libpython3.6m.so;
+arcplot_LIB_DEPENDS:STATIC=general;arcpython;
 
 //Dependencies for the target
 arcpython_LIB_DEPENDS:STATIC=general;/usr/lib/libpython3.6m.so;general;arcmath;
@@ -258,7 +261,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

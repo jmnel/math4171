@@ -1,3 +1,4 @@
+#include "PythonFloat.hpp"
 #include "PythonModule.hpp"
 #include "PythonTupple.hpp"
 
@@ -11,10 +12,6 @@ namespace arc {
 
     // -- Destructor --
     PythonFunction::~PythonFunction() {
-        if (pyFunction) {
-            Py_DECREF(pyFunction);
-            pyFunction = nullptr;
-        }
     }
 
     // -- create function --
@@ -22,15 +19,17 @@ namespace arc {
         shared_ptr<PythonModule> module, string const &name) {
         assert(!name.empty());
 
-        auto pyFunction =
-            PyObject_GetAttrString(module->pyModule, name.c_str());
+        assert( module->pyObject );
+        auto pyObject = PyObject_GetAttrString(module->pyObject, name.c_str());
 
-        if (pyFunction && PyCallable_Check(pyFunction)) {
-            auto func = std::make_shared<PythonFunction>();
-            func->name = name;
-            func->pyFunction = pyFunction;
+        assert( pyObject );
+
+        if (pyObject && PyCallable_Check(pyObject)) {
+            auto pythonFunction = std::make_shared<PythonFunction>();
+            pythonFunction->name = name;
+            pythonFunction->pyObject = pyObject;
             cout << "Info: Function `" << name << "` created." << endl;
-            return func;
+            return pythonFunction;
         } else {
             cout << "Error: Failed to create Python function." << endl;
             PyErr_Print();
@@ -47,13 +46,9 @@ namespace arc {
     string PythonFunction::getName() const { return name; }
 
     void PythonFunction::call(shared_ptr<PythonTupple> args) {
-        auto res = PyObject_CallObject(pyFunction, args->pyObject);
+        cout << "Info: Python function `" << name << "` called." << endl;
+        assert( pyObject );
+        assert( args->pyObject );
+        auto res = PyObject_CallObject(pyObject, args->pyObject);
     }
-
-    //PythonFunction PythonFunction::operator()(shared_ptr<PythonTupple> args) {
-        //auto pValue = PyFloat_FromDouble(0.0);
-        //pValue = PyObject_CallObject(pyFunction, args->pyObject);
-        //Py_DECREF(pValue);
-        //return *this;
-    //}
 }

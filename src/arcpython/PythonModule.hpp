@@ -34,6 +34,5 @@ namespace arc {
 
     private:
         string name;
-        PyObject* pyModule = nullptr;
     };
 }

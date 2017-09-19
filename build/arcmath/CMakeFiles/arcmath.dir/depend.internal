@@ -4,3 +4,9 @@
 arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.o
  /home/jacques/repos/math4171/src/arcmath/CoreMath.cpp
  /home/jacques/repos/math4171/src/arcmath/CoreMath.hpp
+arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o
+ /home/jacques/repos/math4171/src/arcmath/./CoreMath.hpp
+ /home/jacques/repos/math4171/src/arcmath/./Vec.hpp
+ /home/jacques/repos/math4171/src/arcmath/./Vec.inl
+ /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp
+ /home/jacques/repos/math4171/src/arcmath/MinNelderMead.hpp

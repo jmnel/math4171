@@ -152,6 +152,33 @@ CoreMath.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/CoreMath.cpp.s
 .PHONY : CoreMath.cpp.s
 
+MinNelderMead.o: MinNelderMead.cpp.o
+
+.PHONY : MinNelderMead.o
+
+# target to build an object file
+MinNelderMead.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.o
+.PHONY : MinNelderMead.cpp.o
+
+MinNelderMead.i: MinNelderMead.cpp.i
+
+.PHONY : MinNelderMead.i
+
+# target to preprocess a source file
+MinNelderMead.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.i
+.PHONY : MinNelderMead.cpp.i
+
+MinNelderMead.s: MinNelderMead.cpp.s
+
+.PHONY : MinNelderMead.s
+
+# target to generate assembly for a file
+MinNelderMead.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcmath/CMakeFiles/arcmath.dir/build.make arcmath/CMakeFiles/arcmath.dir/MinNelderMead.cpp.s
+.PHONY : MinNelderMead.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... CoreMath.o"
 	@echo "... CoreMath.i"
 	@echo "... CoreMath.s"
+	@echo "... MinNelderMead.o"
+	@echo "... MinNelderMead.i"
+	@echo "... MinNelderMead.s"
 .PHONY : help
 
 

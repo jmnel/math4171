@@ -6,6 +6,10 @@ namespace arc {
     // -- Constructor --
     PythonModule::PythonModule() {}
 
+    // -- Destructor --
+    PythonModule::~PythonModule() {
+    }
+
     // -- create function --
     shared_ptr<PythonModule> PythonModule::create(string const &name) {
         assert(!name.empty());
@@ -22,18 +26,11 @@ namespace arc {
         } else {
             auto module = std::make_shared<PythonModule>();
             module->name = name;
-            module->pyModule = pyModule;
+            module->pyObject = pyModule;
             return module;
         }
     }
 
-    // -- Destructor --
-    PythonModule::~PythonModule() {
-        if (pyModule) {
-            Py_DECREF(pyModule);
-            pyModule = nullptr;
-        }
-    }
 
     // -- getType function --
     PythonObject::Type PythonModule::getType() const {

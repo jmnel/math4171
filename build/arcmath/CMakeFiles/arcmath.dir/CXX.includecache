@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/jacques/repos/math4171/src/arcmath/./CoreMath.hpp
+algorithm
+-
+cmath
+-
+cfloat
+-
+cstdint
+-
+
+/home/jacques/repos/math4171/src/arcmath/./Vec.hpp
+cassert
+-
+iostream
+-
+CoreMath.hpp
+/home/jacques/repos/math4171/src/arcmath/./CoreMath.hpp
+Vec.inl
+/home/jacques/repos/math4171/src/arcmath/./Vec.inl
+
+/home/jacques/repos/math4171/src/arcmath/./Vec.inl
+string
+-
+sstream
+-
+
 /home/jacques/repos/math4171/src/arcmath/CoreMath.cpp
 CoreMath.hpp
 /home/jacques/repos/math4171/src/arcmath/CoreMath.hpp
@@ -18,5 +44,21 @@ cmath
 cfloat
 -
 cstdint
+-
+
+/home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp
+MinNelderMead.hpp
+/home/jacques/repos/math4171/src/arcmath/MinNelderMead.hpp
+
+/home/jacques/repos/math4171/src/arcmath/MinNelderMead.hpp
+array
+-
+functional
+-
+iostream
+-
+CoreMath.hpp
+-
+Vec.hpp
 -
 

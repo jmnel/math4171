@@ -8,9 +8,13 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+%\usepackage{thmtools}
+\usepackage{setspace}
+\usepackage{fancyhdr}
 \usepackage{garamondx}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{float}
 \usepackage{newtxmath}
 
 % Real number symbol
@@ -54,9 +58,20 @@ utilized to test optimization methods.
         as a level curve plot to understand why $f$ is reffered to as the
         \emph{bananna function} and the like.
 
+        \begin{figure}[H]
+            \caption{The \textsc{Rosenbrock} Function}
+        \label{fig:rosenbrock}
+        \begin{center}
+            %\includegraphics[scale=0.8]{/home/jacques/repos/math4171/assignment1/figures/fig1-1.png}
+            \includegraphics[scale=0.8]{./figures/fig1-1.pdf}
+        \end{center}
+    \end{figure}
+
     \item Implement the \textsc{Nelder-Mead} method. Visualize the level curves of the
         given function together with the polytop for each iteration. Finnaly
         visualize the trajectory of the ecenters of gravity of the polytopes!
+
+    
 
     \item Test the program with the starting polytope given by the vertices
         $(-1,1)^T$, $(0,1)^T$, $(-0.5,2)^T$ and the parameters

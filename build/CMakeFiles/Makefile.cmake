@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.9.2/CMakeSystem.cmake"
   "/home/jacques/repos/math4171/src/CMakeLists.txt"
   "/home/jacques/repos/math4171/src/arcmath/CMakeLists.txt"
+  "/home/jacques/repos/math4171/src/arcplot/CMakeLists.txt"
   "/home/jacques/repos/math4171/src/arcpython/CMakeLists.txt"
   "/home/jacques/repos/math4171/src/assignment1-src/CMakeLists.txt"
   "/usr/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
@@ -46,6 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "arcmath/CMakeFiles/CMakeDirectoryInformation.cmake"
   "arcpython/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "arcplot/CMakeFiles/CMakeDirectoryInformation.cmake"
   "assignment1-src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -53,5 +55,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "arcmath/CMakeFiles/arcmath.dir/DependInfo.cmake"
   "arcpython/CMakeFiles/arcpython.dir/DependInfo.cmake"
+  "arcplot/CMakeFiles/arcplot.dir/DependInfo.cmake"
   "assignment1-src/CMakeFiles/assignment1.dir/DependInfo.cmake"
   )

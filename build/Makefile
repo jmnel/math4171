@@ -137,6 +137,19 @@ arcpython/fast:
 .PHONY : arcpython/fast
 
 #=============================================================================
+# Target rules for targets named arcplot
+
+# Build rule for target.
+arcplot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 arcplot
+.PHONY : arcplot
+
+# fast build rule for target.
+arcplot/fast:
+	$(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/build
+.PHONY : arcplot/fast
+
+#=============================================================================
 # Target rules for targets named assignment1
 
 # Build rule for target.
@@ -159,6 +172,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... arcmath"
 	@echo "... arcpython"
+	@echo "... arcplot"
 	@echo "... assignment1"
 .PHONY : help
 

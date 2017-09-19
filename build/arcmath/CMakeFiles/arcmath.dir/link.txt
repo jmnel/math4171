@@ -1,2 +1,2 @@
-/usr/bin/ar qc libarcmath.a  CMakeFiles/arcmath.dir/CoreMath.cpp.o
+/usr/bin/ar qc libarcmath.a  CMakeFiles/arcmath.dir/CoreMath.cpp.o CMakeFiles/arcmath.dir/MinNelderMead.cpp.o
 /usr/bin/ranlib libarcmath.a
