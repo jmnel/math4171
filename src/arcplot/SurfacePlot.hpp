@@ -7,14 +7,13 @@
 #include <Vec.hpp>
 #include <PythonObject.hpp>
 
+using std::vector;
+
 namespace arc::plot {
 
     using namespace arc::python;
 
-    class SurfacePlot;
-    SurfacePlot surfacePlot(vector<vector<double>> const &x,
-                            vector<vector<double>> const &y,
-                            vector<vector<double>> const &z);
+    class Axes;
 
     class SurfacePlot {
     public:
@@ -23,8 +22,10 @@ namespace arc::plot {
 
     private:
         PythonObject pyObject;
-        friend SurfacePlot surfacePlot(vector<vector<double>> const &x,
+        static SurfacePlot surfacePlot( PythonObject axes, vector<vector<double>> const &x,
                                        vector<vector<double>> const &y,
                                        vector<vector<double>> const &z);
+
+        friend class Axes;
     };
 }  // namespace arc::plot

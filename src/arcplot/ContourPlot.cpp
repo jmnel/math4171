@@ -14,9 +14,9 @@ namespace arc::plot {
     // -- Destructor --
     ContourPlot::~ContourPlot() {}
 
-    ContourPlot contourPlot(vector<vector<double>> const &x,
-                            vector<vector<double>> const &y,
-                            vector<vector<double>> const &z) {
+    ContourPlot ContourPlot::contourPlot(vector<vector<double>> const &x,
+                                         vector<vector<double>> const &y,
+                                         vector<vector<double>> const &z) {
         assert(x.size() == y.size());
         assert(y.size() == z.size());
 

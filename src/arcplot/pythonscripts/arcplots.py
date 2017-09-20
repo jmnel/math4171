@@ -36,6 +36,7 @@ def plotContour(x, y, z):
     n = [ 1.5, 10, 50, 100, 200 ]
     contour = plt.contour(x, y, z, n, cmap=cm.gist_ncar)
     plt.plot( [ 1 ], [ 1 ], 'ro' )
+    #plt.colo
     plt.clabel(contour, inline=True, fontsize=10)
     ax = fig.gca()
     ax.set_xlabel(r"${x_1}$", fontsize=10);
@@ -123,6 +124,7 @@ def saveFigure( figure, path ):
     return None
 
 def getCurrentAxes( figure ):
+    #return figure.gca(projection='3d')
     return figure.gca()
 
 def listPlot( x, y ):
@@ -135,4 +137,26 @@ def contourPlot( x, y, z, n=None ):
         return plt.contour( x, y, z, n )
 
 def surfacePlot( ax, x, y, z ):
+    print("surf plot making...")
     return ax.plot_surface( x, y, z )
+
+def setAxesLimitX(axes, foo, bar):
+    print(axes)
+    #ax.set_xlim( xMin, xMax )
+    return None
+
+def setAxesLimitY( ax, yMin, yMax ):
+    ax.set_ylim( yMin, yMax )
+    return None
+
+def setLayoutTight():
+    plt.tight_layout()
+    return None
+
+def setContourN( countour, n ):
+    contour.levels = n
+    return None
+
+def foo( a, b, c ):
+    print "hi from foo"
+    return None

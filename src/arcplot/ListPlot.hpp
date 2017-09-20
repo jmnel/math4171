@@ -17,8 +17,10 @@ namespace arc::plot {
 
     using namespace arc::python;
 
-    class ListPlot;
-    ListPlot listPlot(vector<double> const &x, vector<double> const &y);
+    //class ListPlot;
+    //ListPlot listPlot(vector<double> const &x, vector<double> const &y);
+
+    class Axes;
 
     class ListPlot {
     public:
@@ -29,7 +31,12 @@ namespace arc::plot {
     private:
         PythonObject pythonListPlotObject;
 
-        friend ListPlot listPlot(vector<double> const &, vector<double> const &);
+        static ListPlot listPlot(vector<double> const &x,
+                                 vector<double> const &y);
+
+        friend class Axes;
+        // friend ListPlot listPlot(vector<double> const &, vector<double> const
+        // &);
     };
 
     //ListPlot listPlot(vector<Vec2d> const &x, vector<Vec2d> const &y);

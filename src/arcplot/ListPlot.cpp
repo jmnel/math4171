@@ -15,7 +15,8 @@ namespace arc::plot {
     // -- Destructor --
     ListPlot::~ListPlot() {}
 
-    ListPlot listPlot(vector<double> const &x, vector<double> const &y) {
+    ListPlot ListPlot::listPlot(vector<double> const &x,
+                                vector<double> const &y) {
         assert(x.size() == y.size() );
         //assert(pythonListPlotObject.isValid());
         PythonModule plottingModule("arcplots");

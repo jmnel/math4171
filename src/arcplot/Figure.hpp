@@ -20,7 +20,8 @@ namespace arc::plot {
 
         Axes getCurrentAxes();
         void show();
-        void save( string const &path );
+        void save(string const &path);
+        void setLayoutTight();
 
     private:
         PythonObject pythonFigureObject;

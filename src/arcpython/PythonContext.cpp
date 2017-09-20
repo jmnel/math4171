@@ -24,6 +24,8 @@ namespace arc::python {
         string cmd = "sys.path.append(\"";
         cmd += path;
         cmd += "\")";
+        // cmd += "\n";
+        // cmd += "print(sys.path)\n";
 
         PyRun_SimpleString(cmd.c_str());
     }

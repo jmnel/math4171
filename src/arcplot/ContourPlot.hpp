@@ -7,14 +7,17 @@
 #include <Vec.hpp>
 #include <PythonObject.hpp>
 
+using std::vector;
+
 namespace arc::plot {
 
     using namespace arc::python;
 
-    class ContourPlot;
-    ContourPlot contourPlot(vector<vector<double>> const &x,
-                            vector<vector<double>> const &y,
-                            vector<vector<double>> const &z);
+    // class ContourPlot;
+    // ContourPlot contourPlot(vector<vector<double>> const &x,
+    // vector<vector<double>> const &y,
+    // vector<vector<double>> const &z);
+    class Axes;
 
     class ContourPlot {
     public:
@@ -23,8 +26,10 @@ namespace arc::plot {
 
     private:
         PythonObject pyObject;
-        friend ContourPlot contourPlot(vector<vector<double>> const &x,
+        static ContourPlot contourPlot(vector<vector<double>> const &x,
                                        vector<vector<double>> const &y,
                                        vector<vector<double>> const &z);
+
+        friend class Axes;
     };
 }  // namespace arc::plot

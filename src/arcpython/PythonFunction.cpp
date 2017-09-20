@@ -53,38 +53,40 @@ namespace arc::python {
     string PythonFunction::getName() const { return name; }
 
     // -- call function : overload 1 / no arguments --
-    PythonObject PythonFunction::call() {
-        assert(pyObject);
-        auto ret = PyObject_CallObject(pyObject, nullptr);
-        cout << "Info: Function `" << name << "` called." << endl;
-        cout << "return type=" << ret->ob_type->tp_name << endl;
-        return pythonOmFromApiCast(ret);
-    }
+    //PythonObject PythonFunction::call() {
+        //assert(pyObject);
+        //auto ret = PyObject_CallObject(pyObject, nullptr);
+        //cout << "Info: Function `" << name << "` called." << endl;
+        //cout << "return type=" << ret->ob_type->tp_name << endl;
+        //return pythonOmFromApiCast(ret);
+    //}
     
-    // -- call function : overload 2 / python tuple arguments --
-    PythonObject PythonFunction::call(PythonObject const &args) {
-        assert(pyObject);
-        assert(args.pyObject);
-        auto argsTuple = PythonTuple(1);
-        argsTuple.setAt( 0, args );
-        auto pyArgsObject = pythonOmToApiCast( argsTuple );
-        assert(pyArgsObject);
-        auto ret = PyObject_CallObject(pyObject, pyArgsObject );
-        assert(ret);
-        cout << "Info: Function `" << name << "` called." << endl;
-        cout << "return type=" << ret->ob_type->tp_name << endl;
-        //abort();
-        return pythonOmFromApiCast(ret);
-    }
+    //// -- call function : overload 2 / python tuple arguments --
+    //PythonObject PythonFunction::call(PythonObject const &args) {
+        //assert(pyObject);
+        //assert(args.pyObject);
+        //cout << "Info: Function reg `" << name << "` called." << endl;
+        //auto argsTuple = PythonTuple(1);
+        //argsTuple.setAt( 0, args );
+        //auto pyArgsObject = pythonOmToApiCast( argsTuple );
+        //assert(pyArgsObject);
+        //auto ret = PyObject_CallObject(pyObject, pyArgsObject );
+        //assert(ret);
+        //cout << "return type=" << ret->ob_type->tp_name << endl;
+        ////abort();
+        //return pythonOmFromApiCast(ret);
+    //}
 
-    // -- call function : overload 3 / python tuple arguments --
-    PythonObject PythonFunction::call(PythonTuple const &args) {
-        assert(pyObject);
-        assert(args.pyObject);
-        auto ret = PyObject_CallObject(pyObject, args.pyObject);
-        cout << "Info: Function `" << name << "` called." << endl;
-        return pythonOmFromApiCast(ret);
-    }
+    //// -- call function : overload 3 / python tuple arguments --
+    //PythonObject PythonFunction::call(PythonTuple const &args) {
+        //assert(pyObject);
+        //assert(args.pyObject);
+        //cout << "Info: Function tuple `" << name << "` called." << endl;
+        //// auto ret = PyObject_CallObject(pyObject, args.pyObject);
+        //auto junk = PythonFloat(0.0);
+        //return junk;
+        //// return pythonOmFromApiCast(junk);
+    //}
     // shared_ptr<PythonObject> PythonFunction::call(
     // shared_ptr<PythonTuple> args) {
     //// cout << "Info: Python function `" << name << "` called." << endl;

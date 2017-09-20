@@ -9,10 +9,10 @@ namespace arc::python {
     PythonObject::PythonObject() : id(nextId) {
         nextId++;
         objectCount++;
-        cout << "Info: `PythonObject` created. ";
-        cout << std::hex << "id=0x" << id;
-        cout << " count=" << std::dec;
-        cout << objectCount << endl;
+        //cout << "Info: `PythonObject` created. ";
+        //cout << std::hex << "id=0x" << id;
+        //cout << " count=" << std::dec;
+        //cout << objectCount << endl;
     }
 
     // -- Destructor --

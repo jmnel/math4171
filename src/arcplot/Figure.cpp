@@ -18,20 +18,20 @@ namespace arc::plot {
     // -- Destructor --
     Figure::~Figure() {}
 
+    // -- getCurrentAxes function --
     Axes Figure::getCurrentAxes() {
-        // Load plotting module
-        // PythonModule plottingModule("arcplots");
         PythonFunction getCurrentAxes(module, "getCurrentAxes");
         auto axesPythonObj = getCurrentAxes.call(pythonFigureObject);
         return Axes(axesPythonObj);
     }
 
+    // -- show function --
     void Figure::show() {
-        // PythonModule plottingModule("arcplots");
         PythonFunction showFunc(module, "showFigure");
         showFunc.call(pythonFigureObject);
     }
 
+    // -- save function --
     void Figure::save( string const &path ) {
         assert(!path.empty());
         PythonFunction saveFunc(module, "saveFigure");
@@ -40,6 +40,12 @@ namespace arc::plot {
         args.setAt(0, pythonFigureObject);
         args.setAt(1, pyPath);
         saveFunc.call(args);
+    }
+
+    // -- setLayoutTight function --
+    void Figure::setLayoutTight() {
+        PythonFunction f(module, "setLayoutTight");
+        f.call();
     }
 
 }  // namespace arc::plot

@@ -52,6 +52,7 @@ namespace arc::python {
         assert(pyObject);
         assert(item.isValid());
         assert(i < size());
+        // cout << "hi2" << endl;
         auto pyItem = pythonOmToApiCast(item);
         auto res = PyTuple_SetItem(pyObject, i, pyItem);
         assert(res == 0);

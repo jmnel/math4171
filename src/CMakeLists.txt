@@ -12,6 +12,6 @@ find_package(PythonLibs 3.6.2 REQUIRED )
 
 add_subdirectory( ./arcmath )
 add_subdirectory( ./arcpython )
-add_subdirectory( ./arcplot )
+#add_subdirectory( ./arcplot )
 #add_subdirectory( ./assignment1-src )
 add_subdirectory( ./playground )

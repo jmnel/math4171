@@ -17,7 +17,7 @@ target_compile_options( playground PUBLIC ${DEBUG_FLAGS} )
 target_link_libraries( playground ${PYTHON_LIBRARIES} )
 target_link_libraries( playground arcmath )
 target_link_libraries( playground arcpython )
-target_link_libraries( playground arcplot )
+#target_link_libraries( playground arcplot )
 #target_link_libraries( playground arcplot )
 
 # Link libraries here

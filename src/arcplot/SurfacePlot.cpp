@@ -14,9 +14,12 @@ namespace arc::plot {
     // -- Destructor --
     SurfacePlot::~SurfacePlot() {}
 
-    SurfacePlot surfacePlot(vector<vector<double>> const &x,
-                            vector<vector<double>> const &y,
-                            vector<vector<double>> const &z) {
+    SurfacePlot SurfacePlot::surfacePlot(PythonObject axes,
+                                         vector<vector<double>> const &x,
+                                         vector<vector<double>> const &y,
+                                         vector<vector<double>> const &z) {
+        assert(axes.isValid());
+
         assert(x.size() == y.size());
         assert(y.size() == z.size());
 
@@ -49,10 +52,11 @@ namespace arc::plot {
         assert(yPython.isValid());
         assert(zPython.isValid());
 
-        auto args = PythonTuple(3);
-        args.setAt(0, xPython);
-        args.setAt(1, yPython);
-        args.setAt(2, zPython);
+        auto args = PythonTuple(4);
+        args.setAt(0, axes);
+        args.setAt(1, xPython);
+        args.setAt(2, yPython);
+        args.setAt(3, zPython);
 
         auto pyObject = func.call(args);
         assert(pyObject.isValid());
