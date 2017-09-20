@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vec',['Vec',['../classarc_1_1_vec.html',1,'arc']]]
+  ['listplot',['ListPlot',['../classarc_1_1plot_1_1_list_plot.html',1,'arc::plot']]]
 ];

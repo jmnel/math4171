@@ -1,10 +1,17 @@
 <map id="/home/jacques/repos/math4171/src/arcmath/CoreMath.hpp" name="/home/jacques/repos/math4171/src/arcmath/CoreMath.hpp">
-<area shape="rect" id="node2" href="$_core_math_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/CoreMath.cpp" alt="" coords="5,101,160,149"/>
-<area shape="rect" id="node3" href="$_vec_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/Vec.hpp" alt="" coords="267,101,421,149"/>
-<area shape="rect" id="node5" href="$_min_nelder_mead_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/MinNelderMead.hpp" alt="" coords="88,197,243,245"/>
-<area shape="rect" id="node4" href="$_mat_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/Mat.hpp" alt="" coords="267,197,421,245"/>
-<area shape="rect" id="node7" href="$_main_8cpp.html" title="/home/jacques/repos\l/math4171/src/assignment1\l&#45;src/Main.cpp" alt="" coords="330,293,510,341"/>
-<area shape="rect" id="node8" href="$_surf_plot3d_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/SurfPlot3d.hpp" alt="" coords="496,197,643,245"/>
-<area shape="rect" id="node6" href="$_min_nelder_mead_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/MinNelderMead.cpp" alt="" coords="88,293,243,341"/>
-<area shape="rect" id="node9" href="$_surf_plot3d_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/SurfPlot3d.cpp" alt="" coords="535,293,681,341"/>
+<area shape="rect" id="node2" href="$_core_math_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/CoreMath.cpp" alt="" coords="184,101,363,149"/>
+<area shape="rect" id="node3" href="$_vec_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/Vec.hpp" alt="" coords="597,101,776,149"/>
+<area shape="rect" id="node5" href="$_min_nelder_mead_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/MinNelderMead.hpp" alt="" coords="151,197,329,245"/>
+<area shape="rect" id="node4" href="$_mat_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/Mat.hpp" alt="" coords="848,197,1027,245"/>
+<area shape="rect" id="node7" href="$assignment1-src_2_main_8cpp.html" title="/home/jacques/repos\l/math4171/src/assignment1\l&#45;src/Main.cpp" alt="" coords="209,293,415,341"/>
+<area shape="rect" id="node8" href="$_contour_plot_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/ContourPlot.hpp" alt="" coords="601,197,773,245"/>
+<area shape="rect" id="node10" href="$playground_2_main_8cpp.html" title="/home/jacques/repos\l/math4171/src/playground\l/Main.cpp" alt="" coords="832,293,1027,341"/>
+<area shape="rect" id="node11" href="$_list_plot_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/ListPlot.hpp" alt="" coords="1051,197,1223,245"/>
+<area shape="rect" id="node13" href="$_surf_plot3d_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/old/SurfPlot3d.hpp" alt="" coords="405,197,577,245"/>
+<area shape="rect" id="node15" href="$_surface_plot_8hpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/SurfacePlot.hpp" alt="" coords="1247,197,1419,245"/>
+<area shape="rect" id="node6" href="$_min_nelder_mead_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcmath\l/MinNelderMead.cpp" alt="" coords="5,293,184,341"/>
+<area shape="rect" id="node9" href="$_contour_plot_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/ContourPlot.cpp" alt="" coords="635,293,807,341"/>
+<area shape="rect" id="node12" href="$_list_plot_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/ListPlot.cpp" alt="" coords="1051,293,1223,341"/>
+<area shape="rect" id="node14" href="$_surf_plot3d_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/old/SurfPlot3d.cpp" alt="" coords="439,293,611,341"/>
+<area shape="rect" id="node16" href="$_surface_plot_8cpp.html" title="/home/jacques/repos\l/math4171/src/arcplot\l/SurfacePlot.cpp" alt="" coords="1247,293,1419,341"/>
 </map>

@@ -1,11 +1,11 @@
-<map id="/home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp" name="/home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp">
-<area shape="rect" id="node3" href="$_python_float_8hpp.html" title="PythonFloat.hpp" alt="" coords="296,173,409,197"/>
-<area shape="rect" id="node8" href="$_python_function_8hpp.html" title="PythonFunction.hpp" alt="" coords="433,173,565,197"/>
-<area shape="rect" id="node11" href="$_python_list_8hpp.html" title="PythonList.hpp" alt="" coords="166,173,272,197"/>
-<area shape="rect" id="node13" href="$_python_tupple_8hpp.html" title="PythonTupple.hpp" alt="" coords="19,173,142,197"/>
-<area shape="rect" id="node14" href="$_surf_plot3d_8hpp.html" title="SurfPlot3d.hpp" alt="" coords="589,101,694,125"/>
-<area shape="rect" id="node7" href="$_python_object_8hpp.html" title="PythonObject.hpp" alt="" coords="156,245,279,269"/>
-<area shape="rect" id="node16" href="$_vec_8hpp.html" title="Vec.hpp" alt="" coords="644,173,711,197"/>
-<area shape="rect" id="node17" href="$_core_math_8hpp.html" title="CoreMath.hpp" alt="" coords="848,245,950,269"/>
-<area shape="rect" id="node22" href="$_vec_8inl.html" title="Vec.inl" alt="" coords="735,245,794,269"/>
+<map id="/home/jacques/repos/math4171/src/arcplot/old/SurfPlot3d.cpp" name="/home/jacques/repos/math4171/src/arcplot/old/SurfPlot3d.cpp">
+<area shape="rect" id="node3" href="$_python_float_8hpp.html" title="PythonFloat.hpp" alt="" coords="539,101,662,125"/>
+<area shape="rect" id="node8" href="$_python_function_8hpp.html" title="PythonFunction.hpp" alt="" coords="687,101,829,125"/>
+<area shape="rect" id="node11" href="$_python_list_8hpp.html" title="PythonList.hpp" alt="" coords="1046,101,1161,125"/>
+<area shape="rect" id="node13" href="$_python_tuple_8hpp.html" title="PythonTuple.hpp" alt="" coords="885,101,1007,125"/>
+<area shape="rect" id="node14" href="$_surf_plot3d_8hpp.html" title="SurfPlot3d.hpp" alt="" coords="398,101,515,125"/>
+<area shape="rect" id="node6" href="$_python_object_8hpp.html" title="PythonObject.hpp" alt="" coords="790,173,921,197"/>
+<area shape="rect" id="node16" href="$_vec_8hpp.html" title="Vec.hpp" alt="" coords="339,173,411,197"/>
+<area shape="rect" id="node17" href="$_core_math_8hpp.html" title="CoreMath.hpp" alt="" coords="175,245,283,269"/>
+<area shape="rect" id="node22" href="$_vec_8inl.html" title="Vec.inl" alt="" coords="341,245,409,269"/>
 </map>
