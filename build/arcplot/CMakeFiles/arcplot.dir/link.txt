@@ -1,2 +1,0 @@
-/usr/bin/ar qc libarcplot.a  CMakeFiles/arcplot.dir/Axes.cpp.o CMakeFiles/arcplot.dir/Figure.cpp.o CMakeFiles/arcplot.dir/ListPlot.cpp.o CMakeFiles/arcplot.dir/ContourPlot.cpp.o CMakeFiles/arcplot.dir/SurfacePlot.cpp.o
-/usr/bin/ranlib libarcplot.a

@@ -1,1 +1,0 @@
-/usr/bin/clang++  -Wall -Wextra   CMakeFiles/playground.dir/Main.cpp.o  -o /home/jacques/repos/math4171/bin/Debug/playground /usr/lib/libpython3.6m.so ../arcmath/libarcmath.a ../arcpython/libarcpython.a ../arcplot/libarcplot.a ../arcpython/libarcpython.a /usr/lib/libpython3.6m.so ../arcmath/libarcmath.a 
