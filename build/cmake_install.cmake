@@ -37,7 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/jacques/repos/math4171/build/arcmath/cmake_install.cmake")
   include("/home/jacques/repos/math4171/build/arcpython/cmake_install.cmake")
   include("/home/jacques/repos/math4171/build/arcplot/cmake_install.cmake")
-  include("/home/jacques/repos/math4171/build/assignment1-src/cmake_install.cmake")
+  include("/home/jacques/repos/math4171/build/playground/cmake_install.cmake")
 
 endif()
 

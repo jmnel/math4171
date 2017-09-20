@@ -1,27 +1,27 @@
 #pragma once
 
 #include <cassert>
-#include <memory>
 
 #include <Python.h>
 
 #include "PythonObject.hpp"
 
-using std::shared_ptr;
+namespace arc::python {
 
-namespace arc {
+    class PythonFunction;
 
     class PythonFloat : public PythonObject {
     public:
-        PythonFloat();
-        ~PythonFloat();
+        PythonFloat(double v = 0.0);
+        virtual ~PythonFloat();
 
-        virtual PythonObject::Type getType() const;
-        static shared_ptr<PythonFloat> create( double v);
+        virtual PythonObject::Type getType() const final;
+        // static shared_ptr<PythonFloat> create( double v);
 
         double getValue() const;
         void setValue( double v );
-    private:
 
+    private:
+        friend class PythonFunction;
     };
 }

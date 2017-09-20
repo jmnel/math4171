@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jacques/repos/math4171/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jacques/repos/math4171/build/CMakeFiles /home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/progress.marks
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 assignment1-src/all
+	cd /home/jacques/repos/math4171/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jacques/repos/math4171/build/CMakeFiles /home/jacques/repos/math4171/build/playground/CMakeFiles/progress.marks
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 playground/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jacques/repos/math4171/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 assignment1-src/clean
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 playground/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 assignment1-src/preinstall
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 playground/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 assignment1-src/preinstall
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 playground/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-assignment1-src/CMakeFiles/assignment1.dir/rule:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 assignment1-src/CMakeFiles/assignment1.dir/rule
-.PHONY : assignment1-src/CMakeFiles/assignment1.dir/rule
+playground/CMakeFiles/playground.dir/rule:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f CMakeFiles/Makefile2 playground/CMakeFiles/playground.dir/rule
+.PHONY : playground/CMakeFiles/playground.dir/rule
 
 # Convenience name for target.
-assignment1: assignment1-src/CMakeFiles/assignment1.dir/rule
+playground: playground/CMakeFiles/playground.dir/rule
 
-.PHONY : assignment1
+.PHONY : playground
 
 # fast build rule for target.
-assignment1/fast:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f assignment1-src/CMakeFiles/assignment1.dir/build.make assignment1-src/CMakeFiles/assignment1.dir/build
-.PHONY : assignment1/fast
+playground/fast:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f playground/CMakeFiles/playground.dir/build.make playground/CMakeFiles/playground.dir/build
+.PHONY : playground/fast
 
 Main.o: Main.cpp.o
 
@@ -131,7 +131,7 @@ Main.o: Main.cpp.o
 
 # target to build an object file
 Main.cpp.o:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f assignment1-src/CMakeFiles/assignment1.dir/build.make assignment1-src/CMakeFiles/assignment1.dir/Main.cpp.o
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f playground/CMakeFiles/playground.dir/build.make playground/CMakeFiles/playground.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -140,7 +140,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f assignment1-src/CMakeFiles/assignment1.dir/build.make assignment1-src/CMakeFiles/assignment1.dir/Main.cpp.i
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f playground/CMakeFiles/playground.dir/build.make playground/CMakeFiles/playground.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -149,7 +149,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f assignment1-src/CMakeFiles/assignment1.dir/build.make assignment1-src/CMakeFiles/assignment1.dir/Main.cpp.s
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f playground/CMakeFiles/playground.dir/build.make playground/CMakeFiles/playground.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 # Help Target
@@ -159,7 +159,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... assignment1"
+	@echo "... playground"
 	@echo "... edit_cache"
 	@echo "... Main.o"
 	@echo "... Main.i"

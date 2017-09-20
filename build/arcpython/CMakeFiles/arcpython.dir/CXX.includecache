@@ -6,19 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/home/jacques/repos/math4171/src/arcpython/./PythonObject.hpp
+iostream
+-
+Python.h
+-
+
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.cpp
+PythonCommon.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.hpp
+type_traits
+-
+Python.h
+-
+PythonObject.hpp
+-
+
 /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp
 iostream
 -
-PythonFloat.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
-PythonFunction.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonFunction.hpp
-PythonList.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
-PythonModule.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
-PythonTuple.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 PythonContext.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonContext.hpp
 
@@ -39,16 +47,18 @@ PythonFloat.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
 cassert
 -
-memory
--
 Python.h
 -
 PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
 /home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp
+PythonCommon.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.hpp
 PythonFloat.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
+PythonList.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 PythonModule.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
 PythonTuple.hpp
@@ -69,8 +79,8 @@ PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
 /home/jacques/repos/math4171/src/arcpython/PythonList.cpp
-PythonList.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
+PythonCommon.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.hpp
 PythonList.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 
@@ -107,10 +117,28 @@ PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
+iostream
+-
 Python.h
 -
 
+/home/jacques/repos/math4171/src/arcpython/PythonString.cpp
+PythonString.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonString.hpp
+
+/home/jacques/repos/math4171/src/arcpython/PythonString.hpp
+cassert
+-
+string
+-
+Python.h
+-
+PythonObject.hpp
+-
+
 /home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp
+PythonCommon.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonCommon.hpp
 PythonTuple.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 

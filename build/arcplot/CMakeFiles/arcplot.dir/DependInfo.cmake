@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/jacques/repos/math4171/src/arcplot/Axes.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/Axes.cpp.o"
   "/home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o"
-  "/home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o"
+  "/home/jacques/repos/math4171/src/arcplot/Figure.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/Figure.cpp.o"
+  "/home/jacques/repos/math4171/src/arcplot/ListPlot.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/ListPlot.cpp.o"
+  "/home/jacques/repos/math4171/src/arcplot/SurfacePlot.cpp" "/home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir/SurfacePlot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

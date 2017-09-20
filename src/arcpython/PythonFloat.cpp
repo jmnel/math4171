@@ -1,20 +1,16 @@
 #include "PythonFloat.hpp"
 
-namespace arc {
+namespace arc::python {
 
     // -- Constructor --
-    PythonFloat::PythonFloat() {}
+    PythonFloat::PythonFloat(double value) {
+        Py_Initialize();
+        pyObject = PyFloat_FromDouble(value);
+        assert(pyObject);
+    }
 
     // -- Destructor --
     PythonFloat::~PythonFloat() {}
-
-    // -- create function --
-    shared_ptr<PythonFloat> PythonFloat::create(double v) {
-        auto pythonFloat = std::make_shared<PythonFloat>();
-        pythonFloat->pyObject = PyFloat_FromDouble( v );
-        assert( pythonFloat->pyObject );
-        return pythonFloat;
-    }
 
     // -- getType function --
     PythonObject::Type PythonFloat::getType() const {
@@ -31,6 +27,7 @@ namespace arc {
     void PythonFloat::setValue( double v ) {
         assert( pyObject );
         Py_DECREF( pyObject );
-        pyObject = PyFloat_FromDouble( v );
+        pyObject = PyFloat_FromDouble(v);
+        assert(pyObject);
     }
 }

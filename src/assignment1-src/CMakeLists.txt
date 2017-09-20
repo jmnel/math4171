@@ -1,7 +1,7 @@
 # ---------------------------------------------------
 # -- CMakeLists.txt for `arcplot` static library --
 # ---------------------------------------------------
-set( CMAKE_CXX_STANDARD 14 )
+set( CMAKE_CXX_STANDARD 17 )
 set( CMAKE_CXX_FLAGS "-Wall -Wextra" )
 set( DEBUG_FLAGS "-Wall" "-Wextra" "-O3" )
 

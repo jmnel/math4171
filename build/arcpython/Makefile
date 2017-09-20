@@ -125,6 +125,33 @@ arcpython/fast:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/build
 .PHONY : arcpython/fast
 
+PythonCommon.o: PythonCommon.cpp.o
+
+.PHONY : PythonCommon.o
+
+# target to build an object file
+PythonCommon.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o
+.PHONY : PythonCommon.cpp.o
+
+PythonCommon.i: PythonCommon.cpp.i
+
+.PHONY : PythonCommon.i
+
+# target to preprocess a source file
+PythonCommon.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.i
+.PHONY : PythonCommon.cpp.i
+
+PythonCommon.s: PythonCommon.cpp.s
+
+.PHONY : PythonCommon.s
+
+# target to generate assembly for a file
+PythonCommon.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.s
+.PHONY : PythonCommon.cpp.s
+
 PythonContext.o: PythonContext.cpp.o
 
 .PHONY : PythonContext.o
@@ -287,6 +314,33 @@ PythonObject.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.s
 .PHONY : PythonObject.cpp.s
 
+PythonString.o: PythonString.cpp.o
+
+.PHONY : PythonString.o
+
+# target to build an object file
+PythonString.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o
+.PHONY : PythonString.cpp.o
+
+PythonString.i: PythonString.cpp.i
+
+.PHONY : PythonString.i
+
+# target to preprocess a source file
+PythonString.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.i
+.PHONY : PythonString.cpp.i
+
+PythonString.s: PythonString.cpp.s
+
+.PHONY : PythonString.s
+
+# target to generate assembly for a file
+PythonString.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.s
+.PHONY : PythonString.cpp.s
+
 PythonTuple.o: PythonTuple.cpp.o
 
 .PHONY : PythonTuple.o
@@ -323,6 +377,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... arcpython"
 	@echo "... edit_cache"
+	@echo "... PythonCommon.o"
+	@echo "... PythonCommon.i"
+	@echo "... PythonCommon.s"
 	@echo "... PythonContext.o"
 	@echo "... PythonContext.i"
 	@echo "... PythonContext.s"
@@ -341,6 +398,9 @@ help:
 	@echo "... PythonObject.o"
 	@echo "... PythonObject.i"
 	@echo "... PythonObject.s"
+	@echo "... PythonString.o"
+	@echo "... PythonString.i"
+	@echo "... PythonString.s"
 	@echo "... PythonTuple.o"
 	@echo "... PythonTuple.i"
 	@echo "... PythonTuple.s"

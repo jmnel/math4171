@@ -39,5 +39,5 @@ namespace arc {
                              Simplex2d initialSimplex, double tol,
                              size_t maxIterations, double aplha, double beta,
                              double gamma, bool verbose,
-                             vector<Vec2d[3]> &triangles);
+                             vector<Vec2d> &triangles, vector<Vec2d> &centers);
 }

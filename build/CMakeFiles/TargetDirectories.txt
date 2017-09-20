@@ -9,6 +9,6 @@
 /home/jacques/repos/math4171/build/arcplot/CMakeFiles/rebuild_cache.dir
 /home/jacques/repos/math4171/build/arcplot/CMakeFiles/arcplot.dir
 /home/jacques/repos/math4171/build/arcplot/CMakeFiles/edit_cache.dir
-/home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/rebuild_cache.dir
-/home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/assignment1.dir
-/home/jacques/repos/math4171/build/assignment1-src/CMakeFiles/edit_cache.dir
+/home/jacques/repos/math4171/build/playground/CMakeFiles/rebuild_cache.dir
+/home/jacques/repos/math4171/build/playground/CMakeFiles/playground.dir
+/home/jacques/repos/math4171/build/playground/CMakeFiles/edit_cache.dir

@@ -8,7 +8,9 @@ namespace arc {
     Vec2d minimizeNelderMead(const function<double(Vec2d)> &obj,
                              Simplex2d initialSimplex, double tol,
                              size_t maxIterations, double alpha, double beta,
-                             double gamma, bool verbose = false) {
+                             double gamma, bool verbose,
+                             vector<Vec2d> &polytopes,
+                             vector<Vec2d> &centers) {
         assert(tol > 0.0);
         assert(maxIterations > 0);
 
@@ -41,13 +43,6 @@ namespace arc {
         objAtX[1] = {x[1], f[1]};
         objAtX[2] = {x[2], f[2]};
 
-        // auto printState = [](array<ObjAtX, 3> const &state) -> void {
-        // for (size_t i = 0; i < state.size(); i++) {
-        // cout << i << ": x=" << state[i].x << ", f=";
-        // cout << state[i].f << endl;
-        //}
-        //};
-
         // Parameter 1: Reflection coefficient
         // double alpha = 1.0;
         // Parameter 2: Expansion coefficient
@@ -55,7 +50,7 @@ namespace arc {
         // Parameter 3: Contraction coefficient
         // double gamma = 0.5;
 
-        // Sort polytop
+        // Sort polytope
         stable_sort(objAtX.begin(), objAtX.end(),
                     [](const ObjAtX &a, const ObjAtX &b) -> bool {
                         return a.f <= b.f;
@@ -71,8 +66,16 @@ namespace arc {
             auto &f1 = objAtX[1].f;
             auto &f2 = objAtX[2].f;
 
+            polytopes.push_back( x0 );
+            polytopes.push_back( x1 );
+            polytopes.push_back( x2 );
+
+            
+
             // Calculate midpoint of best simplex side
             auto xC = 0.5 * (x0 + x1);
+
+            centers.push_back( xC );
 
             // Calculate reflection across best side
             auto xR = xC + alpha * (xC - x2);

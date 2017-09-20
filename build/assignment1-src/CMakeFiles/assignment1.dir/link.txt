@@ -1,1 +1,0 @@
-/usr/bin/clang++  -Wall -Wextra   CMakeFiles/assignment1.dir/Main.cpp.o  -o /home/jacques/repos/math4171/bin/Debug/assignment1 /usr/lib/libpython3.6m.so ../arcmath/libarcmath.a ../arcpython/libarcpython.a ../arcplot/libarcplot.a ../arcpython/libarcpython.a /usr/lib/libpython3.6m.so ../arcmath/libarcmath.a 

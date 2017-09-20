@@ -59,6 +59,8 @@ functional
 -
 iostream
 -
+vector
+-
 CoreMath.hpp
 -
 Vec.hpp

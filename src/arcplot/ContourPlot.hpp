@@ -1,19 +1,30 @@
 #pragma once
 
+#include <array>
 #include <iostream>
-#include <functional>
 #include <vector>
 
 #include <Vec.hpp>
+#include <PythonObject.hpp>
 
-using std::cout;
-using std::endl;
-using std::function;
-using std::vector;
+namespace arc::plot {
 
-namespace arc {
+    using namespace arc::python;
 
-    void plotContourFunction(const function<double(Vec2d)> &f,
-                             Vec2d const &dMin, Vec2d const &dMax, uint stepsX,
-                             uint stepsY, vector<Vec2d[3]> triangles);
-}
+    class ContourPlot;
+    ContourPlot contourPlot(vector<vector<double>> const &x,
+                            vector<vector<double>> const &y,
+                            vector<vector<double>> const &z);
+
+    class ContourPlot {
+    public:
+        ContourPlot();
+        virtual ~ContourPlot();
+
+    private:
+        PythonObject pyObject;
+        friend ContourPlot contourPlot(vector<vector<double>> const &x,
+                                       vector<vector<double>> const &y,
+                                       vector<vector<double>> const &z);
+    };
+}  // namespace arc::plot

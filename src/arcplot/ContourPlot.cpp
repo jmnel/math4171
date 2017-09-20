@@ -1,72 +1,67 @@
-#include <PythonContext.hpp>
 #include <PythonFloat.hpp>
 #include <PythonFunction.hpp>
 #include <PythonList.hpp>
+#include <PythonModule.hpp>
 #include <PythonTuple.hpp>
 
 #include "ContourPlot.hpp"
 
-namespace arc {
+namespace arc::plot {
 
-    void plotContourFunction(const function<double(Vec2d)> &f,
-                             Vec2d const &dMin, Vec2d const &dMax, uint m,
-                             uint n, vector<Vec2d[3]> triangles) {
-        assert(m > 1);
-        assert(n > 1);
+    // -- Constructor --
+    ContourPlot::ContourPlot() {}
 
-        assert(dMin.x < dMax.x);
-        assert(dMin.y < dMax.y);
+    // -- Destructor --
+    ContourPlot::~ContourPlot() {}
 
-        PythonContext ctx;
-        ctx.initialize();
+    ContourPlot contourPlot(vector<vector<double>> const &x,
+                            vector<vector<double>> const &y,
+                            vector<vector<double>> const &z) {
+        assert(x.size() == y.size());
+        assert(y.size() == z.size());
 
-        ctx.appendToPath(
-            "/home/jacques/repos/math4171/src/arcplot/pythonscripts");
+        PythonModule module("arcplots");
+        PythonFunction func(module, "contourPlot");
 
-        auto arcplotsModule = ctx.loadModule("arcplots");
-        auto plottingFunction = ctx.loadFunction(arcplotsModule, "plotContour");
+        auto xPython = PythonList();
+        auto yPython = PythonList();
+        auto zPython = PythonList();
 
-        auto x = ctx.createList();
-        auto y = ctx.createList();
-        auto z = ctx.createList();
-
-        auto xInterval = (dMax.x - dMin.x) * 1.0 / m;
-        auto yInterval = (dMax.y - dMin.y) * 1.0 / n;
-
-        // Set x matrix : n rows and m columns
-        for (int i = 0; i < (int)n; i++) {
-            auto rowX = ctx.createList();
-            auto rowY = ctx.createList();
-            auto rowZ = ctx.createList();
-            for (int j = 0; j < (int)m; j++) {
-                auto xVal = dMin.x + j * xInterval;
-                auto yVal = dMin.y + i * yInterval;
-                // auto zVal = xVal * xVal + yVal * yVal;
-                auto zVal = f(Vec2d(xVal, yVal));
-
-                auto kX = ctx.createFloat(xVal);
-                auto kY = ctx.createFloat(yVal);
-                auto kZ = ctx.createFloat(zVal);
-                // rowX->setAt(j, kX);
-                // rowY->setAt(j, kY);
-                // rowZ->setAt(j, kZ);
-                rowX->push_back(kX);
-                rowY->push_back(kY);
-                rowZ->push_back(kZ);
+        for (size_t i = 0; i < x.size(); i++) {
+            auto xRow = PythonList();
+            auto yRow = PythonList();
+            auto zRow = PythonList();
+            for (size_t j = 0; j < x[i].size(); j++) {
+                xRow.pushBack(PythonFloat(x[i][j]));
+                yRow.pushBack(PythonFloat(y[i][j]));
+                zRow.pushBack(PythonFloat(z[i][j]));
             }
-            // x->setAt(i, rowX);
-            // y->setAt(i, rowY);
-            // z->setAt(i, rowZ);
-            x->push_back(rowX);
-            y->push_back(rowY);
-            z->push_back(rowZ);
+            assert(xRow.isValid());
+            assert(yRow.isValid());
+            assert(zRow.isValid());
+
+            xPython.pushBack(xRow);
+            yPython.pushBack(yRow);
+            zPython.pushBack(zRow);
         }
 
-        auto args = ctx.createTuple(3);
-        args->setAt(0, x);
-        args->setAt(1, y);
-        args->setAt(2, z);
+        assert(xPython.isValid());
+        assert(yPython.isValid());
+        assert(zPython.isValid());
 
-        plottingFunction->call(args);
+        auto args = PythonTuple(3);
+        args.setAt(0, xPython);
+        args.setAt(1, yPython);
+        args.setAt(2, zPython);
+
+        auto pyObject = func.call(args);
+        assert(pyObject.isValid());
+
+        ContourPlot p;
+        p.pyObject = pyObject;
+
+        cout << "`ContourPlot` created." << endl;
+        return p;
     }
-}
+
+}  // namespace arc::plot

@@ -125,6 +125,33 @@ arcplot/fast:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/build
 .PHONY : arcplot/fast
 
+Axes.o: Axes.cpp.o
+
+.PHONY : Axes.o
+
+# target to build an object file
+Axes.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Axes.cpp.o
+.PHONY : Axes.cpp.o
+
+Axes.i: Axes.cpp.i
+
+.PHONY : Axes.i
+
+# target to preprocess a source file
+Axes.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Axes.cpp.i
+.PHONY : Axes.cpp.i
+
+Axes.s: Axes.cpp.s
+
+.PHONY : Axes.s
+
+# target to generate assembly for a file
+Axes.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Axes.cpp.s
+.PHONY : Axes.cpp.s
+
 ContourPlot.o: ContourPlot.cpp.o
 
 .PHONY : ContourPlot.o
@@ -152,32 +179,86 @@ ContourPlot.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.s
 .PHONY : ContourPlot.cpp.s
 
-SurfPlot3d.o: SurfPlot3d.cpp.o
+Figure.o: Figure.cpp.o
 
-.PHONY : SurfPlot3d.o
+.PHONY : Figure.o
 
 # target to build an object file
-SurfPlot3d.cpp.o:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o
-.PHONY : SurfPlot3d.cpp.o
+Figure.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Figure.cpp.o
+.PHONY : Figure.cpp.o
 
-SurfPlot3d.i: SurfPlot3d.cpp.i
+Figure.i: Figure.cpp.i
 
-.PHONY : SurfPlot3d.i
+.PHONY : Figure.i
 
 # target to preprocess a source file
-SurfPlot3d.cpp.i:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.i
-.PHONY : SurfPlot3d.cpp.i
+Figure.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Figure.cpp.i
+.PHONY : Figure.cpp.i
 
-SurfPlot3d.s: SurfPlot3d.cpp.s
+Figure.s: Figure.cpp.s
 
-.PHONY : SurfPlot3d.s
+.PHONY : Figure.s
 
 # target to generate assembly for a file
-SurfPlot3d.cpp.s:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.s
-.PHONY : SurfPlot3d.cpp.s
+Figure.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/Figure.cpp.s
+.PHONY : Figure.cpp.s
+
+ListPlot.o: ListPlot.cpp.o
+
+.PHONY : ListPlot.o
+
+# target to build an object file
+ListPlot.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ListPlot.cpp.o
+.PHONY : ListPlot.cpp.o
+
+ListPlot.i: ListPlot.cpp.i
+
+.PHONY : ListPlot.i
+
+# target to preprocess a source file
+ListPlot.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ListPlot.cpp.i
+.PHONY : ListPlot.cpp.i
+
+ListPlot.s: ListPlot.cpp.s
+
+.PHONY : ListPlot.s
+
+# target to generate assembly for a file
+ListPlot.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ListPlot.cpp.s
+.PHONY : ListPlot.cpp.s
+
+SurfacePlot.o: SurfacePlot.cpp.o
+
+.PHONY : SurfacePlot.o
+
+# target to build an object file
+SurfacePlot.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfacePlot.cpp.o
+.PHONY : SurfacePlot.cpp.o
+
+SurfacePlot.i: SurfacePlot.cpp.i
+
+.PHONY : SurfacePlot.i
+
+# target to preprocess a source file
+SurfacePlot.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfacePlot.cpp.i
+.PHONY : SurfacePlot.cpp.i
+
+SurfacePlot.s: SurfacePlot.cpp.s
+
+.PHONY : SurfacePlot.s
+
+# target to generate assembly for a file
+SurfacePlot.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/SurfacePlot.cpp.s
+.PHONY : SurfacePlot.cpp.s
 
 # Help Target
 help:
@@ -188,12 +269,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... arcplot"
 	@echo "... edit_cache"
+	@echo "... Axes.o"
+	@echo "... Axes.i"
+	@echo "... Axes.s"
 	@echo "... ContourPlot.o"
 	@echo "... ContourPlot.i"
 	@echo "... ContourPlot.s"
-	@echo "... SurfPlot3d.o"
-	@echo "... SurfPlot3d.i"
-	@echo "... SurfPlot3d.s"
+	@echo "... Figure.o"
+	@echo "... Figure.i"
+	@echo "... Figure.s"
+	@echo "... ListPlot.o"
+	@echo "... ListPlot.i"
+	@echo "... ListPlot.s"
+	@echo "... SurfacePlot.o"
+	@echo "... SurfacePlot.i"
+	@echo "... SurfacePlot.s"
 .PHONY : help
 
 

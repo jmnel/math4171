@@ -13,23 +13,24 @@ using std::endl;
 using std::shared_ptr;
 using std::string;
 
-namespace arc {
+namespace arc::python {
 
     class PythonContext;
     class PythonFunction;
 
     class PythonModule : public PythonObject {
     public:
-        PythonModule();
+        PythonModule() = default;
+        PythonModule( string const &name);
         virtual ~PythonModule();
 
         virtual Type getType() const;
         string getName() const;
 
     private:
-        static shared_ptr<PythonModule> create( string const &name );
+        //static shared_ptr<PythonModule> create( string const &name );
 
-        friend class PythonContext;
+        //friend class PythonContext;
         friend class PythonFunction;
 
     private:

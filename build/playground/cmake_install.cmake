@@ -1,4 +1,4 @@
-# Install script for directory: /home/jacques/repos/math4171/src/assignment1-src
+# Install script for directory: /home/jacques/repos/math4171/src/playground
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

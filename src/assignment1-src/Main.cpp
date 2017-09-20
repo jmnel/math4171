@@ -30,9 +30,9 @@
 using std::cout;
 using std::dynamic_pointer_cast;
 using std::endl;
-using std::vector;
 using std::shared_ptr;
 using std::string;
+using std::vector;
 
 using namespace arc;
 
@@ -53,11 +53,17 @@ int main(int argc, char* argv[]) {
 
     // xMin = {-4.0.0};
     // xMax = {4.0};
-    plotContourFunction(func1, xMin, xMax, 200, 200);
 
-    array<Vec2d, 3> start = {{Vec2d(0.0), Vec2d(0.1, 0.0), Vec2d(0.0, 0.1)}};
+    array<Vec2d, 3> start = {{Vec2d(-1.0,0.0), Vec2d(0.0, 0.0), Vec2d(-1.0, 1.5)}};
 
-    vector<Vec2d[3]> polytopes;
+    vector<Vec2d> polytopes;
+    vector<Vec2d> centers;
 
-    auto res = minimizeNelderMead(func1, start, 1E-12, 1000, 1.0, 2.0, 0.5, true, polytopes);
+    auto res = minimizeNelderMead(func1, start, 1E-12, 1000, 1.0, 2.0, 0.5,
+                                  true, polytopes, centers);
+
+    assert(centers.size() > 0 );
+    plotContourFunction(func1, xMin, xMax, 200, 200, polytopes);
+
+    plotContourFunction2(func1, xMin, xMax, 200, 200, centers);
 }

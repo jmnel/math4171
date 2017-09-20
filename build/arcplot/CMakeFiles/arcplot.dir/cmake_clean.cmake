@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/arcplot.dir/Axes.cpp.o"
+  "CMakeFiles/arcplot.dir/Figure.cpp.o"
+  "CMakeFiles/arcplot.dir/ListPlot.cpp.o"
   "CMakeFiles/arcplot.dir/ContourPlot.cpp.o"
-  "CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o"
+  "CMakeFiles/arcplot.dir/SurfacePlot.cpp.o"
   "libarcplot.pdb"
   "libarcplot.a"
 )

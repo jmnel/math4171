@@ -13,7 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/jacques/repos/math4171/src/arcmath/CMakeLists.txt"
   "/home/jacques/repos/math4171/src/arcplot/CMakeLists.txt"
   "/home/jacques/repos/math4171/src/arcpython/CMakeLists.txt"
-  "/home/jacques/repos/math4171/src/assignment1-src/CMakeLists.txt"
+  "/home/jacques/repos/math4171/src/playground/CMakeLists.txt"
   "/usr/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.9/Modules/CMakeFindFrameworks.cmake"
@@ -48,7 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "arcmath/CMakeFiles/CMakeDirectoryInformation.cmake"
   "arcpython/CMakeFiles/CMakeDirectoryInformation.cmake"
   "arcplot/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "assignment1-src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "playground/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -56,5 +56,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "arcmath/CMakeFiles/arcmath.dir/DependInfo.cmake"
   "arcpython/CMakeFiles/arcpython.dir/DependInfo.cmake"
   "arcplot/CMakeFiles/arcplot.dir/DependInfo.cmake"
-  "assignment1-src/CMakeFiles/assignment1.dir/DependInfo.cmake"
+  "playground/CMakeFiles/playground.dir/DependInfo.cmake"
   )

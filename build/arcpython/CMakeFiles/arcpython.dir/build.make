@@ -57,9 +57,33 @@ include arcpython/CMakeFiles/arcpython.dir/progress.make
 # Include the compile flags for this target's objects.
 include arcpython/CMakeFiles/arcpython.dir/flags.make
 
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonCommon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o"
+	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonCommon.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonCommon.cpp
+
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arcpython.dir/PythonCommon.cpp.i"
+	cd /home/jacques/repos/math4171/build/arcpython && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jacques/repos/math4171/src/arcpython/PythonCommon.cpp > CMakeFiles/arcpython.dir/PythonCommon.cpp.i
+
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arcpython.dir/PythonCommon.cpp.s"
+	cd /home/jacques/repos/math4171/build/arcpython && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jacques/repos/math4171/src/arcpython/PythonCommon.cpp -o CMakeFiles/arcpython.dir/PythonCommon.cpp.s
+
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.requires:
+
+.PHONY : arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.requires
+
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.provides: arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.requires
+	$(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.provides.build
+.PHONY : arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.provides
+
+arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.provides.build: arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o
+
+
 arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonContext.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.i: cmake_force
@@ -83,7 +107,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o.provides.build: arcpython
 
 arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonFloat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonFloat.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonFloat.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.i: cmake_force
@@ -107,7 +131,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o.provides.build: arcpython/C
 
 arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonFunction.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonFunction.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.i: cmake_force
@@ -131,7 +155,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o.provides.build: arcpytho
 
 arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonList.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonList.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.i: cmake_force
@@ -155,7 +179,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o.provides.build: arcpython/CM
 
 arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonModule.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonModule.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.i: cmake_force
@@ -179,7 +203,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o.provides.build: arcpython/
 
 arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonObject.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonObject.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.i: cmake_force
@@ -201,9 +225,33 @@ arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o.provides: arcpython/CMakeF
 arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o.provides.build: arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o
 
 
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o"
+	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonString.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonString.cpp
+
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arcpython.dir/PythonString.cpp.i"
+	cd /home/jacques/repos/math4171/build/arcpython && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jacques/repos/math4171/src/arcpython/PythonString.cpp > CMakeFiles/arcpython.dir/PythonString.cpp.i
+
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arcpython.dir/PythonString.cpp.s"
+	cd /home/jacques/repos/math4171/build/arcpython && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jacques/repos/math4171/src/arcpython/PythonString.cpp -o CMakeFiles/arcpython.dir/PythonString.cpp.s
+
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.requires:
+
+.PHONY : arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.requires
+
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.provides: arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.requires
+	$(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.provides.build
+.PHONY : arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.provides
+
+arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.provides.build: arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o
+
+
 arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o: arcpython/CMakeFiles/arcpython.dir/flags.make
 arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o: /home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcpython && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcpython.dir/PythonTuple.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp
 
 arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.i: cmake_force
@@ -227,27 +275,31 @@ arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o.provides.build: arcpython/C
 
 # Object files for target arcpython
 arcpython_OBJECTS = \
+"CMakeFiles/arcpython.dir/PythonCommon.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonContext.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonFloat.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonFunction.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonList.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonModule.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonObject.cpp.o" \
+"CMakeFiles/arcpython.dir/PythonString.cpp.o" \
 "CMakeFiles/arcpython.dir/PythonTuple.cpp.o"
 
 # External object files for target arcpython
 arcpython_EXTERNAL_OBJECTS =
 
+arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o
+arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/build.make
 arcpython/libarcpython.a: arcpython/CMakeFiles/arcpython.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libarcpython.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libarcpython.a"
 	cd /home/jacques/repos/math4171/build/arcpython && $(CMAKE_COMMAND) -P CMakeFiles/arcpython.dir/cmake_clean_target.cmake
 	cd /home/jacques/repos/math4171/build/arcpython && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arcpython.dir/link.txt --verbose=$(VERBOSE)
 
@@ -256,12 +308,14 @@ arcpython/CMakeFiles/arcpython.dir/build: arcpython/libarcpython.a
 
 .PHONY : arcpython/CMakeFiles/arcpython.dir/build
 
+arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonCommon.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonFloat.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonList.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonModule.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o.requires
+arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonString.cpp.o.requires
 arcpython/CMakeFiles/arcpython.dir/requires: arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o.requires
 
 .PHONY : arcpython/CMakeFiles/arcpython.dir/requires

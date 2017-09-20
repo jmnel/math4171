@@ -150,17 +150,17 @@ arcplot/fast:
 .PHONY : arcplot/fast
 
 #=============================================================================
-# Target rules for targets named assignment1
+# Target rules for targets named playground
 
 # Build rule for target.
-assignment1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 assignment1
-.PHONY : assignment1
+playground: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playground
+.PHONY : playground
 
 # fast build rule for target.
-assignment1/fast:
-	$(MAKE) -f assignment1-src/CMakeFiles/assignment1.dir/build.make assignment1-src/CMakeFiles/assignment1.dir/build
-.PHONY : assignment1/fast
+playground/fast:
+	$(MAKE) -f playground/CMakeFiles/playground.dir/build.make playground/CMakeFiles/playground.dir/build
+.PHONY : playground/fast
 
 # Help Target
 help:
@@ -173,7 +173,7 @@ help:
 	@echo "... arcmath"
 	@echo "... arcpython"
 	@echo "... arcplot"
-	@echo "... assignment1"
+	@echo "... playground"
 .PHONY : help
 
 
