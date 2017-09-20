@@ -1,6 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node2" href="$namespacearc.html#a5e0f62735567bd3a3f989619af0b4f87" title="arc::plotSurface3dFunction" alt="" coords="105,14,304,38"/>
-<area shape="rect" id="node4" href="$namespacearc.html#accf402e2c9981646b74e76674a3c4f3d" title="Minimizes function using Nelder&#45;Mead polytope algorithm. " alt="" coords="113,63,297,87"/>
-<area shape="rect" id="node3" href="$classarc_1_1_python_context.html#a2e3bb93afa3a87cbc2519cd1beb389ae" title="arc::PythonContext\l::initialize" alt="" coords="352,5,496,41"/>
-<area shape="rect" id="node5" href="$namespacearc.html#a91c641235ac691030c5ce2f55b30926b" title="arc::abs" alt="" coords="385,66,463,90"/>
-</map>

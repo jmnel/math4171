@@ -1,9 +1,0 @@
-<map id="arc::python::PythonFunction::call" name="arc::python::PythonFunction::call">
-<area shape="rect" id="node2" href="$namespacearc_1_1plot.html#a261b0d898a424758e6d7f60b4d81ed05" title="arc::plot::contourPlot" alt="" coords="263,5,431,29"/>
-<area shape="rect" id="node3" href="$classarc_1_1plot_1_1_figure.html#a1909144a4b548dbcba8efae7f3765dfc" title="arc::plot::Figure::\lFigure" alt="" coords="272,54,423,90"/>
-<area shape="rect" id="node4" href="$classarc_1_1plot_1_1_figure.html#a22e2ba290665e48219c00b443727c271" title="arc::plot::Figure::\lgetCurrentAxes" alt="" coords="272,114,423,150"/>
-<area shape="rect" id="node6" href="$classarc_1_1plot_1_1_figure.html#aa9b5ff34c2513211bf97a6995f751d90" title="arc::plot::Figure::show" alt="" coords="257,175,437,199"/>
-<area shape="rect" id="node7" href="$namespacearc_1_1plot.html#afe7dc6b009d82b3f5e85734d5237500c" title="arc::plot::listPlot" alt="" coords="275,223,419,247"/>
-<area shape="rect" id="node8" href="$namespacearc_1_1plot.html#a759662849d66bdf5e8c93f60b9d65566" title="arc::plot::surfacePlot" alt="" coords="263,271,432,295"/>
-<area shape="rect" id="node5" href="$playground_2_main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="485,175,537,199"/>
-</map>

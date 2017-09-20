@@ -1,8 +1,0 @@
-<map id="arc::python::PythonObject" name="arc::python::PythonObject">
-<area shape="rect" id="node2" href="$classarc_1_1python_1_1_python_float.html" title="{arc::python::PythonFloat\n||+ PythonFloat()\l+ ~PythonFloat()\l+ getType()\l+ getValue()\l+ setValue()\l}" alt="" coords="5,243,189,360"/>
-<area shape="rect" id="node3" href="$classarc_1_1python_1_1_python_function.html" title="{arc::python::PythonFunction\n||+ PythonFunction()\l+ ~PythonFunction()\l+ getType()\l+ getName()\l+ call()\l+ call()\l+ call()\l}" alt="" coords="214,231,418,372"/>
-<area shape="rect" id="node4" href="$classarc_1_1python_1_1_python_list.html" title="{arc::python::PythonList\n||+ PythonList()\l+ ~PythonList()\l+ getType()\l+ size()\l+ getAt()\l+ setAt()\l+ pushBack()\l}" alt="" coords="442,231,617,372"/>
-<area shape="rect" id="node5" href="$classarc_1_1python_1_1_python_module.html" title="{arc::python::PythonModule\n||+ PythonModule()\l+ PythonModule()\l+ ~PythonModule()\l+ getType()\l+ getName()\l}" alt="" coords="641,243,834,360"/>
-<area shape="rect" id="node6" href="$classarc_1_1python_1_1_python_string.html" title="{arc::python::PythonString\n||+ PythonString()\l+ ~PythonString()\l+ getType()\l+ getValue()\l+ setValue()\l}" alt="" coords="858,243,1049,360"/>
-<area shape="rect" id="node7" href="$classarc_1_1python_1_1_python_tuple.html" title="{arc::python::PythonTuple\n||+ PythonTuple()\l+ ~PythonTuple()\l+ getType()\l+ size()\l+ getAt()\l+ setAt()\l}" alt="" coords="1073,237,1257,366"/>
-</map>

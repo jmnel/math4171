@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classarc_1_1python_1_1_python_object.html" title="arc::python::PythonObject" alt="" coords="5,125,196,149"/>
-<area shape="rect" id="node2" href="$classarc_1_1python_1_1_python_float.html" title="arc::python::PythonFloat" alt="" coords="254,5,438,29"/>
-<area shape="rect" id="node3" href="$classarc_1_1python_1_1_python_function.html" title="arc::python::PythonFunction" alt="" coords="244,53,448,77"/>
-<area shape="rect" id="node4" href="$classarc_1_1python_1_1_python_list.html" title="arc::python::PythonList" alt="" coords="259,101,433,125"/>
-<area shape="rect" id="node5" href="$classarc_1_1python_1_1_python_module.html" title="arc::python::PythonModule" alt="" coords="249,149,443,173"/>
-<area shape="rect" id="node6" href="$classarc_1_1python_1_1_python_string.html" title="arc::python::PythonString" alt="" coords="251,197,441,221"/>
-<area shape="rect" id="node7" href="$classarc_1_1python_1_1_python_tuple.html" title="arc::python::PythonTuple" alt="" coords="254,245,438,269"/>
-</map>
