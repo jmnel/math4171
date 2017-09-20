@@ -17,8 +17,8 @@ PythonList.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 PythonModule.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
-PythonTupple.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+PythonTuple.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 PythonContext.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonContext.hpp
 
@@ -51,8 +51,8 @@ PythonFloat.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonFloat.hpp
 PythonModule.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
-PythonTupple.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+PythonTuple.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 PythonFunction.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonFunction.hpp
 
@@ -69,6 +69,8 @@ PythonObject.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
 
 /home/jacques/repos/math4171/src/arcpython/PythonList.cpp
+PythonList.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 PythonList.hpp
 /home/jacques/repos/math4171/src/arcpython/PythonList.hpp
 
@@ -108,11 +110,11 @@ PythonObject.hpp
 Python.h
 -
 
-/home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp
-PythonTupple.hpp
-/home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp
+PythonTuple.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 
-/home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+/home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
 Python.h
 -
 iostream

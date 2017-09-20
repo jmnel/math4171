@@ -125,6 +125,33 @@ arcplot/fast:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/build
 .PHONY : arcplot/fast
 
+ContourPlot.o: ContourPlot.cpp.o
+
+.PHONY : ContourPlot.o
+
+# target to build an object file
+ContourPlot.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o
+.PHONY : ContourPlot.cpp.o
+
+ContourPlot.i: ContourPlot.cpp.i
+
+.PHONY : ContourPlot.i
+
+# target to preprocess a source file
+ContourPlot.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.i
+.PHONY : ContourPlot.cpp.i
+
+ContourPlot.s: ContourPlot.cpp.s
+
+.PHONY : ContourPlot.s
+
+# target to generate assembly for a file
+ContourPlot.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.s
+.PHONY : ContourPlot.cpp.s
+
 SurfPlot3d.o: SurfPlot3d.cpp.o
 
 .PHONY : SurfPlot3d.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... arcplot"
 	@echo "... edit_cache"
+	@echo "... ContourPlot.o"
+	@echo "... ContourPlot.i"
+	@echo "... ContourPlot.s"
 	@echo "... SurfPlot3d.o"
 	@echo "... SurfPlot3d.i"
 	@echo "... SurfPlot3d.s"

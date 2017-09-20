@@ -32,6 +32,28 @@ string
 sstream
 -
 
+/home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp
+PythonContext.hpp
+-
+PythonFloat.hpp
+-
+PythonFunction.hpp
+-
+PythonList.hpp
+-
+PythonTuple.hpp
+-
+ContourPlot.hpp
+/home/jacques/repos/math4171/src/arcplot/ContourPlot.hpp
+
+/home/jacques/repos/math4171/src/arcplot/ContourPlot.hpp
+iostream
+-
+functional
+-
+Vec.hpp
+-
+
 /home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp
 PythonContext.hpp
 -
@@ -41,7 +63,7 @@ PythonFunction.hpp
 -
 PythonList.hpp
 -
-PythonTupple.hpp
+PythonTuple.hpp
 -
 SurfPlot3d.hpp
 /home/jacques/repos/math4171/src/arcplot/SurfPlot3d.hpp
@@ -102,7 +124,7 @@ PythonObject.hpp
 Python.h
 -
 
-/home/jacques/repos/math4171/src/arcpython/./PythonTupple.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonTuple.hpp
 Python.h
 -
 iostream

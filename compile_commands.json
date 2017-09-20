@@ -5,6 +5,11 @@
   "file": "/home/jacques/repos/math4171/src/arcmath/CoreMath.cpp"
 },
 {
+  "directory": "/home/jacques/repos/math4171/build/arcmath",
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/arcmath/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcmath.dir/MinNelderMead.cpp.o -c /home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcmath/MinNelderMead.cpp"
+},
+{
   "directory": "/home/jacques/repos/math4171/build/arcpython",
   "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath -I/home/jacques/repos/math4171/src/arcmath/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonContext.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonContext.cpp",
   "file": "/home/jacques/repos/math4171/src/arcpython/PythonContext.cpp"
@@ -36,8 +41,13 @@
 },
 {
   "directory": "/home/jacques/repos/math4171/build/arcpython",
-  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath -I/home/jacques/repos/math4171/src/arcmath/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonTupple.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp",
-  "file": "/home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp"
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcpython/arcmath -I/home/jacques/repos/math4171/src/arcmath/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcpython.dir/PythonTuple.cpp.o -c /home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp"
+},
+{
+  "directory": "/home/jacques/repos/math4171/build/arcplot",
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/arcplot/. -I/home/jacques/repos/math4171/src/arcplot/arcpython -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcmath/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/arcplot.dir/ContourPlot.cpp.o -c /home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp",
+  "file": "/home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp"
 },
 {
   "directory": "/home/jacques/repos/math4171/build/arcplot",
@@ -46,7 +56,7 @@
 },
 {
   "directory": "/home/jacques/repos/math4171/build/assignment1-src",
-  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/assignment1-src/arcplot -I/home/jacques/repos/math4171/src/arcmath/. -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcplot/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/assignment1.dir/Main.cpp.o -c /home/jacques/repos/math4171/src/assignment1-src/Main.cpp",
+  "command": "/usr/bin/clang++   -I/home/jacques/repos/math4171/src/assignment1-src/arcmath -I/home/jacques/repos/math4171/src/assignment1-src/arcplot -I/home/jacques/repos/math4171/src/arcmath/. -I/home/jacques/repos/math4171/src/arcpython/. -I/usr/include/python3.6m -I/home/jacques/repos/math4171/src/arcplot/.  -Wall -Wextra   -Wall -Wextra -O3 -std=gnu++14 -o CMakeFiles/assignment1.dir/Main.cpp.o -c /home/jacques/repos/math4171/src/assignment1-src/Main.cpp",
   "file": "/home/jacques/repos/math4171/src/assignment1-src/Main.cpp"
 }
 ]

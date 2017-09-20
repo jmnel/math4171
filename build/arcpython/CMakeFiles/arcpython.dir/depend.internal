@@ -9,7 +9,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonContext.cpp.o
  /home/jacques/repos/math4171/src/arcpython/PythonList.hpp
  /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
  /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
- /home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+ /home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h
  /usr/include/python3.6m/bltinmodule.h
@@ -162,7 +162,7 @@ arcpython/CMakeFiles/arcpython.dir/PythonFunction.cpp.o
  /home/jacques/repos/math4171/src/arcpython/PythonFunction.hpp
  /home/jacques/repos/math4171/src/arcpython/PythonModule.hpp
  /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
- /home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+ /home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h
  /usr/include/python3.6m/bltinmodule.h
@@ -458,10 +458,10 @@ arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.o
  /usr/include/python3.6m/unicodeobject.h
  /usr/include/python3.6m/warnings.h
  /usr/include/python3.6m/weakrefobject.h
-arcpython/CMakeFiles/arcpython.dir/PythonTupple.cpp.o
+arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o
  /home/jacques/repos/math4171/src/arcpython/PythonObject.hpp
- /home/jacques/repos/math4171/src/arcpython/PythonTupple.cpp
- /home/jacques/repos/math4171/src/arcpython/PythonTupple.hpp
+ /home/jacques/repos/math4171/src/arcpython/PythonTuple.cpp
+ /home/jacques/repos/math4171/src/arcpython/PythonTuple.hpp
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h
  /usr/include/python3.6m/bltinmodule.h

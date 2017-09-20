@@ -1,0 +1,9 @@
+<map id="arc::Vec::up" name="arc::Vec::up">
+<area shape="rect" id="node2" href="$namespacearc.html#afe2e0b936c8731aea6af470f9573e188" title="arc::operator+" alt="" coords="148,5,255,29"/>
+<area shape="rect" id="node3" href="$namespacearc.html#a8c04034b89e02701587dcea0646377b2" title="arc::operator&#45;" alt="" coords="151,53,251,77"/>
+<area shape="rect" id="node4" href="$namespacearc.html#aa1ab715453e42ef3f962d9fbdef3f1bd" title="arc::operator*" alt="" coords="150,101,253,125"/>
+<area shape="rect" id="node6" href="$namespacearc.html#a51109ed424e8adff2637d6a2478687bc" title="arc::operator/" alt="" coords="151,149,252,173"/>
+<area shape="rect" id="node7" href="$namespacearc.html#a92b2a1bc245caaddb780a70a9559e920" title="arc::operator==" alt="" coords="144,197,259,221"/>
+<area shape="rect" id="node8" href="$namespacearc.html#aaa0b8073e411194ba478983438046a59" title="arc::operator!=" alt="" coords="146,245,257,269"/>
+<area shape="rect" id="node5" href="$namespacearc.html#a7b51a56ef71502af24dc5d96e72de188" title="Calculate vector dot product. " alt="" coords="307,101,373,125"/>
+</map>

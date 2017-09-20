@@ -9,17 +9,17 @@
 
 #include <Vec.hpp>
 
-//#include "../../include/matplotlibcpp.h"
 #include "PythonContext.hpp"
 #include "PythonFloat.hpp"
 #include "PythonFunction.hpp"
 #include "PythonList.hpp"
 #include "PythonObject.hpp"
-#include "PythonTupple.hpp"
+#include "PythonTuple.hpp"
 
+#include <ContourPlot.hpp>
 #include "SurfPlot3d.hpp"
 
-//#include "NelderMeadMinimize.hpp"
+#include "MinNelderMead.hpp"
 
 //#ifdef _WIN32
 //#elif __APPLE__
@@ -49,44 +49,15 @@ int main(int argc, char* argv[]) {
     Vec2d xMin(-1.5, -0.5);
     Vec2d xMax(1.5, 2.0);
 
-    plotSurface3dFunction(func1, xMin, xMax, 50, 50);
+    plotSurface3dFunction(func1, xMin, xMax, 20, 20);
 
-    // PythonContext pythCtx;
-    // pythCtx.initialize();
-    // pythCtx.appendToPath(
-    //"/home/jacques/repos/math4171/src/arcplot/pythonscripts/");
-    // auto foo = pythCtx.loadModule("arcplots");
-    // auto plotSurfcace3dFunction = pythCtx.loadFunction(foo, "plotSurface3d");
-    // auto args = pythCtx.createTupple(3);
+    // xMin = {-4.0.0};
+    // xMax = {4.0};
+    plotContourFunction(func1, xMin, xMax, 200, 200);
 
-    // auto X = pythCtx.createList(10);
-    // auto Y = pythCtx.createList(10);
-    // auto Z = pythCtx.createList(10);
+    array<Vec2d, 3> start = {{Vec2d(0.0), Vec2d(0.1, 0.0), Vec2d(0.0, 0.1)}};
 
-    // for (int iY = 0; iY < X->getSize(); iY++) {
-    // auto v = pythCtx.createFloat(-5.0 + iY * 1.0);
-    // auto row = pythCtx.createList(10);
-    // auto col = pythCtx.createList(10);
-    // auto zRow = pythCtx.createList(10);
-    // for (size_t iX = 0; iX < row->getSize(); iX++) {
-    // auto k = pythCtx.createFloat(-5.0 + iX * 1.0);
-    // auto l = pythCtx.createFloat(-5.0 + iY * 1.0);
-    // auto xVal = -5.0 + iX * 1.0;
-    // auto yVal = -5.0 + iY * 1.0;
+    vector<Vec2d[3]> polytopes;
 
-    // auto zVal = pythCtx.createFloat(xVal * xVal + yVal * yVal);
-    // row->setAt(iX, k);
-    // col->setAt(iX, l);
-    // zRow->setAt(iX, zVal);
-    //}
-    // X->setAt(iY, row);
-    // Y->setAt(iY, col);
-    // Z->setAt(iY, zRow);
-    //}
-
-    // args->setAt(0, X);
-    // args->setAt(1, Y);
-    // args->setAt(2, Z);
-
-    // plotSurfcace3dFunction->call(args);
+    auto res = minimizeNelderMead(func1, start, 1E-12, 1000, 1.0, 2.0, 0.5, true, polytopes);
 }

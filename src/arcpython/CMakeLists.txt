@@ -11,7 +11,7 @@ set( SRC_FILES
     PythonList.cpp
     PythonModule.cpp
     PythonObject.cpp
-    PythonTupple.cpp
+    PythonTuple.cpp
     )
 
 add_library( arcpython STATIC ${SRC_FILES} )

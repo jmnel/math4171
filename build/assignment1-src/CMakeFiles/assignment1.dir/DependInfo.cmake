@@ -10,6 +10,7 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/jacques/repos/math4171/src/assignment1-src/arcmath"
   "/home/jacques/repos/math4171/src/assignment1-src/arcplot"
   "/home/jacques/repos/math4171/src/arcmath/."
   "/home/jacques/repos/math4171/src/arcpython/."

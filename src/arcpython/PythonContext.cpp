@@ -4,7 +4,7 @@
 #include "PythonFunction.hpp"
 #include "PythonList.hpp"
 #include "PythonModule.hpp"
-#include "PythonTupple.hpp"
+#include "PythonTuple.hpp"
 
 #include "PythonContext.hpp"
 
@@ -20,23 +20,28 @@ namespace arc {
     PythonContext::~PythonContext() {
         if (isInitializedFlag) {
             isInitializedFlag = false;
-            Py_Finalize();
+            //auto res = Py_FinalizeEx();
+            cout << "Python context destroyed." << endl;
+            //cout << "res=" << res << endl;
         }
     }
 
     // -- initialize function --
     void PythonContext::initialize() {
-        cout << "Info: Initializing Python 3.6.1 context." << endl;
+        cout << "Info: Initializing Python 3.6.2 context." << endl;
         Py_Initialize();
+        // cout << "res=" << res << endl;
         isInitializedFlag = true;
+        cout << "done" << endl;
     }
 
     // -- destroy function --
     void PythonContext::destroy() {
-        if( isInitializedFlag ) {
+        assert(false);
+        if (isInitializedFlag) {
             isInitializedFlag = false;
-            Py_Finalize();
-            cout << "Info: Python 3.6.1 context destroyed." << endl;
+            // Py_FinalizeEx();
+            // cout << "Info: Python 3.6.2 context destroyed." << endl;
         }
     }
 
@@ -54,25 +59,26 @@ namespace arc {
         }
     }
 
-    shared_ptr<PythonFunction> PythonContext::loadFunction( shared_ptr<PythonModule> module, string const &name ) {
-        return PythonFunction::create( module, name );
+    shared_ptr<PythonFunction> PythonContext::loadFunction(
+        shared_ptr<PythonModule> module, string const &name) {
+        return PythonFunction::create(module, name);
     }
 
-    shared_ptr<PythonModule> PythonContext::loadModule( string const &name ) {
-        return PythonModule::create( name );
+    shared_ptr<PythonModule> PythonContext::loadModule(string const &name) {
+        return PythonModule::create(name);
     }
 
     shared_ptr<PythonFloat> PythonContext::createFloat(double v) {
         return PythonFloat::create(v);
     }
 
-    shared_ptr<PythonList> PythonContext::createList(size_t size) {
-        return PythonList::create(size);
+    shared_ptr<PythonList> PythonContext::createList() {
+        return PythonList::create();
     }
 
-    shared_ptr<PythonTupple> PythonContext::createTupple(size_t size) {
-        return PythonTupple::create(size);
+    shared_ptr<PythonTuple> PythonContext::createTuple(size_t size) {
+        return PythonTuple::create(size);
         cout << "Creating tupple" << endl;
-        }
+    }
 
 }  // namespace arc

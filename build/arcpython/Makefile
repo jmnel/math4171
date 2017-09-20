@@ -287,32 +287,32 @@ PythonObject.cpp.s:
 	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonObject.cpp.s
 .PHONY : PythonObject.cpp.s
 
-PythonTupple.o: PythonTupple.cpp.o
+PythonTuple.o: PythonTuple.cpp.o
 
-.PHONY : PythonTupple.o
+.PHONY : PythonTuple.o
 
 # target to build an object file
-PythonTupple.cpp.o:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTupple.cpp.o
-.PHONY : PythonTupple.cpp.o
+PythonTuple.cpp.o:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.o
+.PHONY : PythonTuple.cpp.o
 
-PythonTupple.i: PythonTupple.cpp.i
+PythonTuple.i: PythonTuple.cpp.i
 
-.PHONY : PythonTupple.i
+.PHONY : PythonTuple.i
 
 # target to preprocess a source file
-PythonTupple.cpp.i:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTupple.cpp.i
-.PHONY : PythonTupple.cpp.i
+PythonTuple.cpp.i:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.i
+.PHONY : PythonTuple.cpp.i
 
-PythonTupple.s: PythonTupple.cpp.s
+PythonTuple.s: PythonTuple.cpp.s
 
-.PHONY : PythonTupple.s
+.PHONY : PythonTuple.s
 
 # target to generate assembly for a file
-PythonTupple.cpp.s:
-	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTupple.cpp.s
-.PHONY : PythonTupple.cpp.s
+PythonTuple.cpp.s:
+	cd /home/jacques/repos/math4171/build && $(MAKE) -f arcpython/CMakeFiles/arcpython.dir/build.make arcpython/CMakeFiles/arcpython.dir/PythonTuple.cpp.s
+.PHONY : PythonTuple.cpp.s
 
 # Help Target
 help:
@@ -341,9 +341,9 @@ help:
 	@echo "... PythonObject.o"
 	@echo "... PythonObject.i"
 	@echo "... PythonObject.s"
-	@echo "... PythonTupple.o"
-	@echo "... PythonTupple.i"
-	@echo "... PythonTupple.s"
+	@echo "... PythonTuple.o"
+	@echo "... PythonTuple.i"
+	@echo "... PythonTuple.s"
 .PHONY : help
 
 

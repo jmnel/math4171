@@ -16,6 +16,20 @@ cfloat
 cstdint
 -
 
+/home/jacques/repos/math4171/src/arcmath/./MinNelderMead.hpp
+algorithm
+-
+array
+-
+functional
+-
+iostream
+-
+CoreMath.hpp
+-
+Vec.hpp
+-
+
 /home/jacques/repos/math4171/src/arcmath/./Vec.hpp
 cassert
 -
@@ -30,6 +44,14 @@ Vec.inl
 string
 -
 sstream
+-
+
+/home/jacques/repos/math4171/src/arcplot/./ContourPlot.hpp
+iostream
+-
+functional
+-
+Vec.hpp
 -
 
 /home/jacques/repos/math4171/src/arcplot/./SurfPlot3d.hpp
@@ -88,7 +110,7 @@ PythonObject.hpp
 Python.h
 -
 
-/home/jacques/repos/math4171/src/arcpython/./PythonTupple.hpp
+/home/jacques/repos/math4171/src/arcpython/./PythonTuple.hpp
 Python.h
 -
 iostream
@@ -123,10 +145,14 @@ PythonList.hpp
 /home/jacques/repos/math4171/src/assignment1-src/PythonList.hpp
 PythonObject.hpp
 /home/jacques/repos/math4171/src/assignment1-src/PythonObject.hpp
-PythonTupple.hpp
-/home/jacques/repos/math4171/src/assignment1-src/PythonTupple.hpp
+PythonTuple.hpp
+/home/jacques/repos/math4171/src/assignment1-src/PythonTuple.hpp
+ContourPlot.hpp
+-
 SurfPlot3d.hpp
 /home/jacques/repos/math4171/src/assignment1-src/SurfPlot3d.hpp
+MinNelderMead.hpp
+/home/jacques/repos/math4171/src/assignment1-src/MinNelderMead.hpp
 
 /usr/include/python3.6m/Python.h
 patchlevel.h

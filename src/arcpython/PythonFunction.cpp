@@ -1,6 +1,6 @@
 #include "PythonFloat.hpp"
 #include "PythonModule.hpp"
-#include "PythonTupple.hpp"
+#include "PythonTuple.hpp"
 
 #include "PythonFunction.hpp"
 
@@ -45,10 +45,13 @@ namespace arc {
     // -- getName function --
     string PythonFunction::getName() const { return name; }
 
-    void PythonFunction::call(shared_ptr<PythonTupple> args) {
-        cout << "Info: Python function `" << name << "` called." << endl;
+    void PythonFunction::call(shared_ptr<PythonTuple> args) {
+        // cout << "Info: Python function `" << name << "` called." << endl;
         assert( pyObject );
-        assert( args->pyObject );
+        assert(args->pyObject);
+
+        assert(PyCallable_Check(pyObject));
+
         auto res = PyObject_CallObject(pyObject, args->pyObject);
     }
 }

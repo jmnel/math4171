@@ -16,7 +16,7 @@ namespace arc {
     class PythonFunction;
     class PythonList;
     class PythonModule;
-    class PythonTupple;
+    class PythonTuple;
 
     class PythonContext {
     public:
@@ -34,9 +34,9 @@ namespace arc {
         shared_ptr<PythonModule> loadModule(string const &moduleName);
 
         shared_ptr<PythonFloat> createFloat(double v);
-        shared_ptr<PythonList> createList(size_t size);
+        shared_ptr<PythonList> createList();
 
-        shared_ptr<PythonTupple> createTupple(size_t size);
+        shared_ptr<PythonTuple> createTuple(size_t size);
 
     private:
         bool isInitializedFlag = false;

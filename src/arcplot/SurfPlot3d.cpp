@@ -2,7 +2,7 @@
 #include <PythonFloat.hpp>
 #include <PythonFunction.hpp>
 #include <PythonList.hpp>
-#include <PythonTupple.hpp>
+#include <PythonTuple.hpp>
 
 #include "SurfPlot3d.hpp"
 
@@ -33,18 +33,18 @@ namespace arc {
         auto plottingFunction =
             ctx.loadFunction(arcplotsModule, "plotSurface3d");
 
-        auto x = ctx.createList(n);
-        auto y = ctx.createList(n);
-        auto z = ctx.createList(n);
+        auto x = ctx.createList();
+        auto y = ctx.createList();
+        auto z = ctx.createList();
 
         auto xInterval = (dMax.x - dMin.x) * 1.0 / m;
         auto yInterval = (dMax.y - dMin.y) * 1.0 / n;
 
         // Set x matrix : n rows and m columns
         for (int i = 0; i < (int)n; i++) {
-            auto rowX = ctx.createList(m);
-            auto rowY = ctx.createList(m);
-            auto rowZ = ctx.createList(m);
+            auto rowX = ctx.createList();
+            auto rowY = ctx.createList();
+            auto rowZ = ctx.createList();
             for (int j = 0; j < (int)m; j++) {
                 auto xVal = dMin.x + j * xInterval;
                 auto yVal = dMin.y + i * yInterval;
@@ -54,20 +54,27 @@ namespace arc {
                 auto kX = ctx.createFloat(xVal);
                 auto kY = ctx.createFloat(yVal);
                 auto kZ = ctx.createFloat(zVal);
-                rowX->setAt(j, kX);
-                rowY->setAt(j, kY);
-                rowZ->setAt(j, kZ);
+                // rowX->setAt(j, kX);
+                // rowY->setAt(j, kY);
+                // rowZ->setAt(j, kZ);
+                rowX->push_back(kX);
+                rowY->push_back(kY);
+                rowZ->push_back(kZ);
             }
-            x->setAt(i, rowX);
-            y->setAt(i, rowY);
-            z->setAt(i, rowZ);
+            // x->setAt(i, rowX);
+            // y->setAt(i, rowY);
+            // z->setAt(i, rowZ);
+            x->push_back(rowX);
+            y->push_back(rowY);
+            z->push_back(rowZ);
         }
 
-        auto args = ctx.createTupple(3);
+        auto args = ctx.createTuple(3);
         args->setAt(0, x);
         args->setAt(1, y);
         args->setAt(2, z);
 
         plottingFunction->call(args);
+
     }
 }

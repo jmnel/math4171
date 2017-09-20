@@ -5,7 +5,7 @@
 namespace arc {
 
     class PythonList;
-    class PythonTupple;
+    class PythonTuple;
 
     class PythonObject {
     public:
@@ -18,7 +18,7 @@ namespace arc {
         // PyObject* getPyObject()
 
         friend class PythonList;
-        friend class PythonTupple;
+        friend class PythonTuple;
 
     protected:
         PyObject* pyObject = nullptr;

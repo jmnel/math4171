@@ -18,7 +18,7 @@ namespace arc {
 
     class PythonContext;
     class PythonModule;
-    class PythonTupple;
+    class PythonTuple;
 
     class PythonFunction : PythonObject {
     public:
@@ -29,8 +29,7 @@ namespace arc {
         virtual PythonObject::Type getType() const;
         virtual string getName() const;
 
-        void call( shared_ptr<PythonTupple> args );
-        //PythonFunction operator()( shared_ptr<PythonTupple> args );
+        void call( shared_ptr<PythonTuple> args );
 
     private:
         static shared_ptr<PythonFunction> create( shared_ptr<PythonModule> module, string const &name );

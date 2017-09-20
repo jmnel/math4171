@@ -6,6 +6,7 @@ set( CMAKE_CXX_FLAGS "-Wall -Wextra" )
 set( DEBUG_FLAGS "-Wall" "-Wextra" "-O3" )
 
 set( SRC_FILES
+    ContourPlot.cpp
     SurfPlot3d.cpp
     )
 

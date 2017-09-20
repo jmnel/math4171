@@ -14,9 +14,15 @@ namespace arc {
     shared_ptr<PythonModule> PythonModule::create(string const &name) {
         assert(!name.empty());
 
+
+        // auto pyName = PyUnicode_DecodeUTF8(name.c_str(), sizeof(name),
+        // errors);
+        // cout << "Err: " << errors << endl;
         auto pyName = PyUnicode_DecodeFSDefault(name.c_str());
+        assert(pyName);
         auto pyModule = PyImport_Import(pyName);
-        Py_DECREF(pyName);
+        cout << "here" << endl;
+        // Py_DECREF(pyName);
 
         assert(pyModule);
         if (!pyModule) {

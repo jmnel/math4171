@@ -27,10 +27,13 @@ namespace arc {
         virtual PythonObject::Type getType() const;
         // size_t getSize() const;
 
+        void push_back(shared_ptr<PythonObject> object);
         shared_ptr<PythonObject> getAt(size_t n) const;
         void setAt(size_t n, shared_ptr<PythonObject> pythonObject);
 
         size_t getSize() const;
+
+        shared_ptr<PythonObject> operator[](const size_t i);
         //double &operator[](const size_t i);
         //double const &operator[](const size_t i) const;
         //PythonList &operator=(PythonList const &t);
@@ -38,7 +41,7 @@ namespace arc {
     private:
         static shared_ptr<PythonList>
 
-        create(size_t size);
+        create();
 
         friend class PythonContext;
         friend class PythonFunction;

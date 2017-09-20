@@ -57,9 +57,33 @@ include arcplot/CMakeFiles/arcplot.dir/progress.make
 # Include the compile flags for this target's objects.
 include arcplot/CMakeFiles/arcplot.dir/flags.make
 
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o: arcplot/CMakeFiles/arcplot.dir/flags.make
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o: /home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o"
+	cd /home/jacques/repos/math4171/build/arcplot && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcplot.dir/ContourPlot.cpp.o -c /home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp
+
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/arcplot.dir/ContourPlot.cpp.i"
+	cd /home/jacques/repos/math4171/build/arcplot && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp > CMakeFiles/arcplot.dir/ContourPlot.cpp.i
+
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/arcplot.dir/ContourPlot.cpp.s"
+	cd /home/jacques/repos/math4171/build/arcplot && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jacques/repos/math4171/src/arcplot/ContourPlot.cpp -o CMakeFiles/arcplot.dir/ContourPlot.cpp.s
+
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.requires:
+
+.PHONY : arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.requires
+
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.provides: arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.requires
+	$(MAKE) -f arcplot/CMakeFiles/arcplot.dir/build.make arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.provides.build
+.PHONY : arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.provides
+
+arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.provides.build: arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o
+
+
 arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o: arcplot/CMakeFiles/arcplot.dir/flags.make
 arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o: /home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o"
 	cd /home/jacques/repos/math4171/build/arcplot && ccache /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o -c /home/jacques/repos/math4171/src/arcplot/SurfPlot3d.cpp
 
 arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.i: cmake_force
@@ -83,15 +107,17 @@ arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o.provides.build: arcplot/CMakeFil
 
 # Object files for target arcplot
 arcplot_OBJECTS = \
+"CMakeFiles/arcplot.dir/ContourPlot.cpp.o" \
 "CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o"
 
 # External object files for target arcplot
 arcplot_EXTERNAL_OBJECTS =
 
+arcplot/libarcplot.a: arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o
 arcplot/libarcplot.a: arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o
 arcplot/libarcplot.a: arcplot/CMakeFiles/arcplot.dir/build.make
 arcplot/libarcplot.a: arcplot/CMakeFiles/arcplot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libarcplot.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jacques/repos/math4171/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libarcplot.a"
 	cd /home/jacques/repos/math4171/build/arcplot && $(CMAKE_COMMAND) -P CMakeFiles/arcplot.dir/cmake_clean_target.cmake
 	cd /home/jacques/repos/math4171/build/arcplot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/arcplot.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,6 +126,7 @@ arcplot/CMakeFiles/arcplot.dir/build: arcplot/libarcplot.a
 
 .PHONY : arcplot/CMakeFiles/arcplot.dir/build
 
+arcplot/CMakeFiles/arcplot.dir/requires: arcplot/CMakeFiles/arcplot.dir/ContourPlot.cpp.o.requires
 arcplot/CMakeFiles/arcplot.dir/requires: arcplot/CMakeFiles/arcplot.dir/SurfPlot3d.cpp.o.requires
 
 .PHONY : arcplot/CMakeFiles/arcplot.dir/requires
